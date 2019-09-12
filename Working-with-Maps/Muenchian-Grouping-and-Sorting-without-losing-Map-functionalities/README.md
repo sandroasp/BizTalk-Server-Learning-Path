@@ -20,15 +20,25 @@ There is an astonishing post by Chris Romp about [Muenchian Grouping and Sorting
 <xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
 <!– And let’s do some sorting for good measure… –>
 <xsl:sort select=”OrderId” order=”ascending”/>
+
 <Order>
+
 <OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
+
 <Items>
+
 <!– Another loop… –>
+
 <xsl:for-each select=”key(‘groups’,OrderId)”>
+
 <ItemId><xsl:value-of select=”ItemId” /></ItemId>
+
 </xsl:for-each>
+
 </Items>
+
 </Order>
+
 </xsl:for-each>
  
 The problem with that approach is that gives an error:
