@@ -1,4 +1,4 @@
-# Handling Exceptions inside BizTalk Orchestrations
+# Accessing and change message values inside orchestration
 # Introduction
 There are 3 ways that we can read and set values of the message inside orchestration:
 * Using Property promotion
