@@ -43,6 +43,7 @@ Add two scripting functoids to the map
 * In the first, configure to an “Inline XSLT Call Template” and put key expression
   * <xsl:key name=”groups” match=”Order” use=”OrderId”/>
 * In the second, configure to an “Inline XSLT” and the rest of the XSL
+
     
     <!– This will loop through our key (“OrderId”) –>
     <xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
