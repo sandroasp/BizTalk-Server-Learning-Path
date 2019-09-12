@@ -1,0 +1,5 @@
+C:\Development\Testes\AccessingAndChangeMessageValuesInOrchestration\HelperClassLibrary\bin\Debug\HelperClassLibrary.dll
+C:\Development\Testes\AccessingAndChangeMessageValuesInOrchestration\HelperClassLibrary\bin\Debug\HelperClassLibrary.pdb
+C:\Development\Testes\AccessingAndChangeMessageValuesInOrchestration\HelperClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Development\Testes\AccessingAndChangeMessageValuesInOrchestration\HelperClassLibrary\obj\Debug\HelperClassLibrary.dll
+C:\Development\Testes\AccessingAndChangeMessageValuesInOrchestration\HelperClassLibrary\obj\Debug\HelperClassLibrary.pdb
