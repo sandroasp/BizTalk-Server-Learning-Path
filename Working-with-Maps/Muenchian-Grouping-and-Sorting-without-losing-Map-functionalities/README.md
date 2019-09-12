@@ -1,49 +1,83 @@
-# Handling Exceptions inside BizTalk Orchestrations
+# Muenchian Grouping and Sorting in BizTalk Maps without losing Map functionalities
 # Introduction
-Handling exceptions inside orchestration is the equivalent of doing a **catch { }** block in C#, of course, there are some little differences, but the idea is the same.
+Searching for all the preceding siblings with the 'preceding-siblings' axis takes a long time if you're near the end of the records, this involves looking at every single contact each time which this method very inefficient.
 
-# General Exception Type
-When we create **New Exception Handler**, in property **Exception Object Type** combobox, the only item in the list is **General Exception**:
+The Muenchian Method is a method developed by Steve Muench for performing grouping and sorting functionalities in a more efficient way using keys.  Keys work by assigning a key value to a node and giving you easy access to that node through the key value.  If there are lots of nodes that have the same key value, then all those nodes are retrieved when you use that key value.  Effectively this means that if you want to group a set of nodes according to a particular property of the node, then you can use keys to group them together.
 
-Think of catching a **Generic Exception** as the equivalent of doing a **catch { }** block in C# with no exception declared. **General Exception** allows BizTalk to deal with any exception it may catch and re-throw, there’s no way to get the exception message at that point.
+There is an astonishing post by Chris Romp about [Muenchian Grouping and Sorting in BizTalk Maps](https://blogs.msdn.microsoft.com/chrisromp/2008/07/31/muenchian-grouping-and-sorting-in-biztalk-maps/), but it has one limitation, by creating and configures Custom XSL Path we lose all mapping features.
 
-![General Exception](media/general-exception.jpg)
+![Muenchian Grouping and Sorting in BizTalk Maps](media/custom-xsl-path.jpg)
 
-# How can I get Exception Message
-You can accomplish this by changing the exception type to **System.Exception** or another type like **System.Web.Services.Protocols.SoapException**:
-* In **Exception Object Type** property select: **<.NET Exception…>**
-* In Artifact Type windows, select **System.Exception**
+**So how can we use Muenchian Grouping without losing Map features?**
 
-![System Exception](media/system-exception.jpg)
+# Building my first approach
+**My First approach**: Was try to put an Inline XSLT functoid and put all the XSL inside
 
-By selecting another type, you are able to define **Exception Object Name**, in this case, **ex**, and then for getting the error message is just like C#: **ex.Message** or **ex.ToString()**.
+![Muenchian Grouping and Sorting in BizTalk Maps](media/meunchian-grouping1.jpg)
 
-See sample one on this project.
+<xsl:key name=”groups” match=”Order” use=”OrderId”/>
+<!– This will loop through our key (“OrderId”) –>
+<xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
+<!– And let’s do some sorting for good measure… –>
+<xsl:sort select=”OrderId” order=”ascending”/>
+<Order>
+<OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
+<Items>
+<!– Another loop… –>
+<xsl:for-each select=”key(‘groups’,OrderId)”>
+<ItemId><xsl:value-of select=”ItemId” /></ItemId>
+</xsl:for-each>
+</Items>
+</Order>
+</xsl:for-each>
+ 
+The problem with that approach is that gives an error:
+* XSLT compile error at (9,8). See InnerException for details. ‘xsl:key’ cannot be a child of the ‘ns0:OutputOrder’ element
 
-# Handling Delivery Failure Exception (using a request-response port)
+So, to avoid this error we need to separate “<xsl:key name=”groups” match=”Order” use=”OrderId”/>” expression from the rest of the XSL (see second approach)
 
-There is a great post by [Naveen Karamchetti](https://www.codeproject.com/Articles/13576/A-developers-guide-to-handling-exceptions-in-BizTa) about this; this is the key steps…
+# Building the right approach and solving the problem
+Add two scripting functoids to the map
+* In the first, configure to an “Inline XSLT Call Template” and put key expression
+  * <xsl:key name=”groups” match=”Order” use=”OrderId”/>
+* In the second, configure to an “Inline XSLT” and the rest of the XSL
+  * <!– This will loop through our key (“OrderId”) –>
+	<xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
+	<!– And let’s do some sorting for good measure… –>
+	<xsl:sort select=”OrderId” order=”ascending”/>
+	<Order>
+	<OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
+	<Items>
+	<!– Another loop… –>
+	<xsl:for-each select=”key(‘groups’,OrderId)”>
+	<ItemId><xsl:value-of select=”ItemId” /></ItemId>
+	</xsl:for-each>
+	</Items>
+	</Order>
+	</xsl:for-each>
 
-In order to catch an exception within your scope block in BizTalk while using a request-response port, you might have to do the following:
-* Set the retry-count to **0** on your physical request-response port which you use to bind.
-* Enable the flag Delivery Notification to ‘Transmitted’ on your logical request-response port within the orchestration.
-* Catch the **Microsoft.XLANGs.BaseTypes.DeliveryFailureException** exception and handle it has you please.
 
-The Delivery Notification flag on the Send Port indicates that the orchestration must be NOTIFIED back, in case the message has not been received by the destination. Delivery Notification works only when the Retry Count set to **0**.
+See Sample 1, map “MapOrder.btm” 
 
-When a message cannot be delivered, a Delivery Failure Exception is raised and the exception needs to be handled by the Orchestration.
+# How can we improved (a little more) this solution
 
-# Handling SOAP Exception
-Similar to Delivery Failure, but in this case, we have to configure the Exception with “System.Web.Services.Protocols.SoapException”.
+When leading with large files, speed processing is vital. Classical Muenchian grouping use generate-id(). Muenchian grouping using generate-id() is slowest that using count() function, and shows worst scalability. Probably the reason is poor generate-id() function implementation. In other words, count() function performs is much better.
 
-Note: remember to set the retry-count to **0**.
+So to improve Meunchian a little more we have to use count() function instead of generate-id():
+* <xsl:for-each select=”Order[count(. | key('groups',OrderId)[1]) = 1]”>
+* See Sample 1, map “MapOrder2.btm”
 
-To get an error message, just: **ex.Detail.InnerText**
+Here some performance stats that I found (see original post):
 
-See sample two in this project.
+![Muenchian Grouping Performance](media/muenchian-performance-table1.jpg)
+
+The graph view works better:
+
+![Muenchian Grouping Performance](media/muenchian-performance.jpg)
 
 # Read more about it
-You can read more about this topic here: [BizTalk Training – Handling Exceptions inside orchestration](https://blog.sandro-pereira.com/2009/10/26/biztalk-training-handling-exceptions-inside-orchestration/)
+You can read more about this topic here: [BizTalk Training – Mapping – Muenchian Grouping and Sorting in BizTalk Maps without losing Map functionalities
+](https://blog.sandro-pereira.com/2009/10/28/biztalk-training-mapping-muenchian-grouping-and-sorting-in-biztalk-maps-without-losing-map-functionalities/)
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
