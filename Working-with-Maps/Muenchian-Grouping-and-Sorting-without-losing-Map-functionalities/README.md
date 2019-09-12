@@ -15,11 +15,11 @@ There is an astonishing post by Chris Romp about [Muenchian Grouping and Sorting
 
 ![Muenchian Grouping and Sorting in BizTalk Maps](media/meunchian-grouping1.jpg)
 
-<xsl:key name=”groups” match=”Order” use=”OrderId”/>
-<!– This will loop through our key (“OrderId”) –>
-<xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
-<!– And let’s do some sorting for good measure… –>
-<xsl:sort select=”OrderId” order=”ascending”/>
+> <xsl:key name=”groups” match=”Order” use=”OrderId”/>
+> <!– This will loop through our key (“OrderId”) –>
+> <xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
+> <!– And let’s do some sorting for good measure… –>
+> <xsl:sort select=”OrderId” order=”ascending”/>
 
 <Order>
 
