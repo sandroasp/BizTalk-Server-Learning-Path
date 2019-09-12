@@ -1,0 +1,4 @@
+C:\Development\08- MuenchianGroupingSortingWithoutLosingMapFunctionalitie\MuenchianGrouping\bin\Deployment\MuenchianGrouping.dll
+C:\Development\08- MuenchianGroupingSortingWithoutLosingMapFunctionalitie\MuenchianGrouping\bin\Deployment\MuenchianGrouping.pdb
+C:\Development\08- MuenchianGroupingSortingWithoutLosingMapFunctionalitie\MuenchianGrouping\obj\Deployment\MuenchianGrouping.dll
+C:\Development\08- MuenchianGroupingSortingWithoutLosingMapFunctionalitie\MuenchianGrouping\obj\Deployment\MuenchianGrouping.pdb
