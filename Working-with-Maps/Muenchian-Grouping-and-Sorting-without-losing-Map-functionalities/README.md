@@ -15,32 +15,24 @@ There is an astonishing post by Chris Romp about [Muenchian Grouping and Sorting
 
 ![Muenchian Grouping and Sorting in BizTalk Maps](media/meunchian-grouping1.jpg)
 
-<xsl:key name=”groups” match=”Order” use=”OrderId”/>
-<!– This will loop through our key (“OrderId”) –>
-<xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
-<!– And let’s do some sorting for good measure… –>
-<xsl:sort select=”OrderId” order=”ascending”/>
+    
+    <xsl:key name=”groups” match=”Order” use=”OrderId”/>
+    <!– This will loop through our key (“OrderId”) –>
+    <xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
+        <!– And let’s do some sorting for good measure… –>
+        <xsl:sort select=”OrderId” order=”ascending”/>
+        <Order>
+	    <OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
+	    <Items>
+	    <!– Another loop… –>
+	    <xsl:for-each select=”key(‘groups’,OrderId)”>
+	        <ItemId><xsl:value-of select=”ItemId” /></ItemId>
+	    </xsl:for-each>
+	    </Items>
+	 </Order>
+    </xsl:for-each>
+    
 
-<Order>
-
-<OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
-
-<Items>
-
-<!– Another loop… –>
-
-<xsl:for-each select=”key(‘groups’,OrderId)”>
-
-<ItemId><xsl:value-of select=”ItemId” /></ItemId>
-
-</xsl:for-each>
-
-</Items>
-
-</Order>
-
-</xsl:for-each>
- 
 The problem with that approach is that gives an error:
 * XSLT compile error at (9,8). See InnerException for details. ‘xsl:key’ cannot be a child of the ‘ns0:OutputOrder’ element
 
@@ -51,21 +43,23 @@ Add two scripting functoids to the map
 * In the first, configure to an “Inline XSLT Call Template” and put key expression
   * <xsl:key name=”groups” match=”Order” use=”OrderId”/>
 * In the second, configure to an “Inline XSLT” and the rest of the XSL
-  * <!– This will loop through our key (“OrderId”) –>
-	<xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
-	<!– And let’s do some sorting for good measure… –>
+
+    
+    <!– This will loop through our key (“OrderId”) –>
+    <xsl:for-each select=”Order[generate-id(.)=generate-id(key('groups',OrderId))]“>
+        <!– And let’s do some sorting for good measure… –>
 	<xsl:sort select=”OrderId” order=”ascending”/>
 	<Order>
-	<OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
-	<Items>
-	<!– Another loop… –>
-	<xsl:for-each select=”key(‘groups’,OrderId)”>
-	<ItemId><xsl:value-of select=”ItemId” /></ItemId>
-	</xsl:for-each>
-	</Items>
-	</Order>
-	</xsl:for-each>
-
+	    <OrderId><xsl:value-of select=”OrderId/text()” /></OrderId>
+	    <Items>
+		    <!– Another loop… –>
+		    <xsl:for-each select=”key(‘groups’,OrderId)”>
+			    <ItemId><xsl:value-of select=”ItemId” /></ItemId>
+		    </xsl:for-each>
+	    </Items>
+        </Order>
+    </xsl:for-each>
+    
 
 See Sample 1, map “MapOrder.btm” 
 
