@@ -20,6 +20,8 @@ They are read/write so it provides an easy way to change values inside your mess
 
 Learn more: [Distinguished Fields vs. Promoted Properties](https://blog.sandro-pereira.com/2009/03/28/distinguished-fields-vs-promoted-properties/), [Basics of Promoted Properties](http://geekswithblogs.net/sthomas/archive/2005/06/27/44906.aspx)
 
+![Property Promotion](media/property-promotion.jpg)
+
 ## Using Promoted Properties:
 
     
@@ -51,6 +53,8 @@ To see what is the XPath expression of the field:
 * Right-click and select **Properties**
 * Select the value of the property **Instance XPath**
 
+![Instance XPath](media/instance-xpath.jpg)
+
 ## Using XPath Expression in Message Assign:
     
     //Read
@@ -72,6 +76,8 @@ How to create class from schema:
 Create Orchestration variable
 * First you have to create an orchestration variable from the class that you create previous
 * On property Type select <.NET Class…> and select Person class that you create previous
+
+![Orchestration Variable](media/variable-person.jpg)
 
 Using C# object inside Message Assign:
     
