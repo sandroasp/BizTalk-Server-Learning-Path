@@ -1,0 +1,4 @@
+C:\Development\AnnoyingTord\AnnoyingTord\bin\Debug\AnnoyingTord.dll
+C:\Development\AnnoyingTord\AnnoyingTord\bin\Debug\AnnoyingTord.pdb
+C:\Development\AnnoyingTord\AnnoyingTord\obj\Debug\AnnoyingTord.dll
+C:\Development\AnnoyingTord\AnnoyingTord\obj\Debug\AnnoyingTord.pdb

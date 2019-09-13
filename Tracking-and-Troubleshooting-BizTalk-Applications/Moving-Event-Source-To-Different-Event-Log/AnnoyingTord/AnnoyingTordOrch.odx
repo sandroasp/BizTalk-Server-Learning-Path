@@ -1,0 +1,143 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="5567b2a1-8df9-4b51-8dc6-47ef15b5cb61" LowerBound="1.1" HigherBound="38.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="AnnoyingTord" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="21892c58-ecda-48a5-a7b1-80de666a870e" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="InputType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="557cd7b8-30bc-4608-8771-4e29850130d6" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="XMLOp" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="c28f76a3-9032-4758-a454-4b7cd9ea0c92" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.35">
+                    <om:Property Name="Ref" Value="System.Xml.XmlDocument" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="5ded1cd3-0478-48a0-a870-e56fda3a8911" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="37.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="AnnoyingTordOrch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="d6dc44f6-02f6-4920-b0a7-c27e3e2188a0" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="ffd7a298-4dcc-4a02-a8d4-3961b77358ad" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="32b01e96-aeeb-4200-a71b-2663652490d6" ParentLink="ServiceBody_Statement" LowerBound="21.1" HigherBound="23.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="InputPort" />
+                    <om:Property Name="MessageName" Value="msgInput" />
+                    <om:Property Name="OperationName" Value="XMLOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="6decad7c-b557-4b13-96c6-1461c6854604" ParentLink="ServiceBody_Statement" LowerBound="23.1" HigherBound="33.1">
+                    <om:Property Name="Expression" Value="System.Diagnostics.EventLog.WriteEntry(&quot;AnnoyingTord3&quot;, &#xD;&#xA;               &quot;Hello Tord! Incoming message... Scanning.. Receiving operation connection to &quot; + &#xD;&#xA;               &quot;data base.. MESSAGE RECEIVE!&quot;);&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;AnnoyingTord3&quot;, &#xD;&#xA;               &quot;Just an update Tord! Message successfully Transformed&quot;);&#xD;&#xA;&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;AnnoyingTord3&quot;, &#xD;&#xA;               &quot;Finally Tord! Message sent to external system&quot;);" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Logging Expr" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="7851aafb-1030-4123-ae8c-19ad85ac3420" ParentLink="ServiceBody_Statement" LowerBound="33.1" HigherBound="35.1">
+                    <om:Property Name="PortName" Value="SendPort" />
+                    <om:Property Name="MessageName" Value="msgInput" />
+                    <om:Property Name="OperationName" Value="XMLOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="09b28daf-2002-4db9-91ed-bd273f8e1856" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="AnnoyingTord.InputType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InputPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="ebaef9a0-1ce4-46a8-a6bf-1fc66543e110" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d328cba6-9d19-4cac-9e2c-17a6cc3e9047" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="16.1" HigherBound="18.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="10" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="AnnoyingTord.InputType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="a8285ead-2ead-4047-88da-e51d1d82b6c7" ParentLink="PortDeclaration_CLRAttribute" LowerBound="16.1" HigherBound="17.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module AnnoyingTord
+{
+    internal porttype InputType
+    {
+        oneway XMLOp
+        {
+            System.Xml.XmlDocument
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service AnnoyingTordOrch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements InputType InputPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses InputType SendPort;
+        message System.Xml.XmlDocument msgInput;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("32b01e96-aeeb-4200-a71b-2663652490d6")]
+            activate receive (InputPort.XMLOp, msgInput);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6decad7c-b557-4b13-96c6-1461c6854604")]
+            System.Diagnostics.EventLog.WriteEntry("AnnoyingTord3", 
+                           "Hello Tord! Incoming message... Scanning.. Receiving operation connection to " + 
+                           "data base.. MESSAGE RECEIVE!");
+            
+            System.Diagnostics.EventLog.WriteEntry("AnnoyingTord3", 
+                           "Just an update Tord! Message successfully Transformed");
+            
+            System.Diagnostics.EventLog.WriteEntry("AnnoyingTord3", 
+                           "Finally Tord! Message sent to external system");
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7851aafb-1030-4123-ae8c-19ad85ac3420")]
+            send (SendPort.XMLOp, msgInput);
+        }
+    }
+}
+
