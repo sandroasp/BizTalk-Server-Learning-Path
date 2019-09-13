@@ -23,10 +23,10 @@ Hard-coding the SQL connection strings might lead to maintenance overhead and se
 **Important** considerations:
 * You shouldn’t Hard-coding this value directly in the functoid otherwise it will be a nightmare when you deploy this to a different environment.
 * You can and you should store this parameter in a different storage location (SSO, Registry or others) and get this value using a scripting Functoid or custom functoid which can then be linked to the Database Lookup Functoid, like the:
- * **BTSNTSvc Config Get Functoid**: This functoid allows you to get configuration parameters from BTSNTsvc.exe.config. If there is no section specified, the functoid reads from the AppSettings.
- * **Windows Registry Config Get Functoid**: This functoid allows you to get configuration parameters from Windows Registry.
- * **SSO Config Get Functoid**: This functoid allows you to get configuration parameters from SSO Database.
- * **Rule Engine Config Get Functoid**: This functoid allows you to obtain a definition value from a Vocabulary in the Business Rules Engine.
+  * **BTSNTSvc Config Get Functoid**: This functoid allows you to get configuration parameters from BTSNTsvc.exe.config. If there is no section specified, the functoid reads from the AppSettings.
+  * **Windows Registry Config Get Functoid**: This functoid allows you to get configuration parameters from Windows Registry.
+  * **SSO Config Get Functoid**: This functoid allows you to get configuration parameters from SSO Database.
+  * **Rule Engine Config Get Functoid**: This functoid allows you to obtain a definition value from a Vocabulary in the Business Rules Engine.
 
 All of these custom functoids are available in the BizTalk Mapper Extensions UtilityPack
 
