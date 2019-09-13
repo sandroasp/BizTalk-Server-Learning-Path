@@ -1,0 +1,276 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="e4d1394d-3345-46e8-bbed-ac1072d0302a" LowerBound="1.1" HigherBound="56.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="HowToCallSQLStoredProcedureWithoutInputs" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="8da9c206-d294-4dde-a93e-1f9404a69a1c" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RcvTriggerCommonType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ddd65f8f-2e93-4652-b94f-bd2b471fe1af" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="7bbc47eb-ba16-4092-9e3c-127e30ef969f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.50">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs._01_MostCommonSituation.TriggerCommon" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d32589f6-d5b2-442f-9c13-046d69470bf4" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SQLOrdersCommonSPType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6a7ea0c4-a522-4aab-8785-b6d385ab8ddf" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetCodes" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="9843cfce-ca66-49a2-a9c3-f2fed4dadd0d" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.69">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInput" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="8a8bdc34-579a-4e39-85a1-5571a28992b3" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.71" HigherBound="15.135">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4af0ad8e-50c7-4ef5-ba3e-3323a3094330" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendSQLResultCommonType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e9b97aba-92e6-406e-8001-45797242ea15" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="8a6cca0a-d7b4-4df7-ab61-6d2d2924cc44" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.77">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="57bbf11b-91f0-4e53-9cba-6db60e57dc15" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="55.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MostCommonSituationCallSQLStoredProcedure" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="4b80b84d-05c7-486c-893e-8aed0d0ceab8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs._01_MostCommonSituation.TriggerCommon" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgTriggerCommon" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="934c31be-8ff0-4524-8ef3-151f2cf23d83" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInput" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSQLGetCodesReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="125c0769-a60b-4f96-acd9-b1604a822b56" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSQLGetCodesResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="ee3c0eb9-538b-427e-b48d-214ae827c077" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="b057303b-29b5-4a18-bc32-02e754f74f93" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="41.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="RcvTriggerCommonPort" />
+                    <om:Property Name="MessageName" Value="msgTriggerCommon" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Trigger" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="a7639265-f3e0-49af-80b1-8cf10c4b78c5" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="47.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct SQL GetCodes Req Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="a6affb42-13f0-45da-9173-4c3d4492355d" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="46.1">
+                        <om:Property Name="ClassName" Value="HowToCallSQLStoredProcedureWithoutInputs._01_MostCommonSituation.mapTriggerToSQLGetCodes" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="GetCodes Transform" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="e69f64e5-c2d1-4e7c-96a9-d3f61f836cb1" ParentLink="Transform_InputMessagePartRef" LowerBound="45.139" HigherBound="45.155">
+                            <om:Property Name="MessageRef" Value="msgTriggerCommon" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="5a1a0c57-da95-4838-a2f7-9e6f98696758" ParentLink="Transform_OutputMessagePartRef" LowerBound="45.28" HigherBound="45.45">
+                            <om:Property Name="MessageRef" Value="msgSQLGetCodesReq" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="a78ddacc-4d0b-452b-842b-79f9658474ce" ParentLink="Construct_MessageRef" LowerBound="42.23" HigherBound="42.40">
+                        <om:Property Name="Ref" Value="msgSQLGetCodesReq" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="ce378774-1e0f-4653-a0ac-21ba3f88a9bb" ParentLink="ServiceBody_Statement" LowerBound="47.1" HigherBound="49.1">
+                    <om:Property Name="PortName" Value="SQLOrdersCommonSPPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesReq" />
+                    <om:Property Name="OperationName" Value="GetCodes" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send GetCodes" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="2c51241b-1ffb-4dbb-874a-d963dd24ef7b" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="51.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="SQLOrdersCommonSPPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesResp" />
+                    <om:Property Name="OperationName" Value="GetCodes" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive GetCodes Resp" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="915e6b1c-60cc-4313-ab0f-2062096ce527" ParentLink="ServiceBody_Statement" LowerBound="51.1" HigherBound="53.1">
+                    <om:Property Name="PortName" Value="SendSQLResultCommonPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesResp" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send SQL Result" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="d46741dc-8203-4e3b-8572-82b8ac929f2d" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.RcvTriggerCommonType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvTriggerCommonPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="19a11cf1-fa94-46bf-876e-d21a0e414933" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="342b9668-952d-4e04-9261-3972b41a43ee" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="13" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQLOrdersCommonSPType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLOrdersCommonSPPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="36f92278-f85b-4cb0-a80c-3effe43eabe6" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="93a3c97a-d7a9-4e0a-92d4-9356e43f06af" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="18" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SendSQLResultCommonType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSQLResultCommonPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="b8e10d45-37ca-4ca7-9ef1-1d819359e75a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module HowToCallSQLStoredProcedureWithoutInputs
+{
+    public porttype RcvTriggerCommonType
+    {
+        oneway Operation_1
+        {
+            _01_MostCommonSituation.TriggerCommon
+        };
+    };
+    internal porttype SQLOrdersCommonSPType
+    {
+        requestresponse GetCodes
+        {
+            SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInput, SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse
+        };
+    };
+    internal porttype SendSQLResultCommonType
+    {
+        oneway Operation_1
+        {
+            SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MostCommonSituationCallSQLStoredProcedure
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements RcvTriggerCommonType RcvTriggerCommonPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SQLOrdersCommonSPType SQLOrdersCommonSPPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendSQLResultCommonType SendSQLResultCommonPort;
+        message _01_MostCommonSituation.TriggerCommon msgTriggerCommon;
+        message SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInput msgSQLGetCodesReq;
+        message SQL_COMMON_TypedProcedure_dbo.usp_GetCodesWithDummyInputResponse msgSQLGetCodesResp;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("b057303b-29b5-4a18-bc32-02e754f74f93")]
+            activate receive (RcvTriggerCommonPort.Operation_1, msgTriggerCommon);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a7639265-f3e0-49af-80b1-8cf10c4b78c5")]
+            construct msgSQLGetCodesReq
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("a6affb42-13f0-45da-9173-4c3d4492355d")]
+                transform (msgSQLGetCodesReq) = HowToCallSQLStoredProcedureWithoutInputs._01_MostCommonSituation.mapTriggerToSQLGetCodes (msgTriggerCommon);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ce378774-1e0f-4653-a0ac-21ba3f88a9bb")]
+            send (SQLOrdersCommonSPPort.GetCodes, msgSQLGetCodesReq);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2c51241b-1ffb-4dbb-874a-d963dd24ef7b")]
+            receive (SQLOrdersCommonSPPort.GetCodes, msgSQLGetCodesResp);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("915e6b1c-60cc-4313-ab0f-2062096ce527")]
+            send (SendSQLResultCommonPort.Operation_1, msgSQLGetCodesResp);
+        }
+    }
+}
+

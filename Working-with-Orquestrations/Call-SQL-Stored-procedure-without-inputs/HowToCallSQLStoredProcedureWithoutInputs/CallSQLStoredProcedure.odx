@@ -1,0 +1,276 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="abf47476-1d9c-41d5-b1fe-1398084d8171" LowerBound="1.1" HigherBound="60.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="HowToCallSQLStoredProcedureWithoutInputs" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="32361bd7-2f35-46d6-a019-069f9c6909ca" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RcvTriggerType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ae24ba88-4a9c-4541-b696-86a7c815e1f5" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="TriggerOp" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="a3eda4e9-51ce-4a64-aa86-49f373f8ac40" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.26">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.TriggerSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="7911346c-c75b-440d-a08d-1b170b91268e" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SQLOrdersType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="b880e994-18fa-4d27-88af-8f111fa4892c" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GetCodes" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="2a8ffe63-0103-44e6-a18c-b8378efe4a53" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.48">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_TypedProcedure_dbo.usp_GetCodes" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="1a800ea9-fbfa-426b-96cc-6948bbf6a234" ParentLink="OperationDeclaration_ResponseMessageRef" LowerBound="15.50" HigherBound="15.93">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_TypedProcedure_dbo.usp_GetCodesResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4cd2c5fc-5cdb-494d-8921-e6bc6b13dd74" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendSQLResultType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="9ee6bf95-c244-4272-aac6-c5e636143806" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ResultArchiveOp" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="1acedab5-feab-4df3-9950-0a564c938cd3" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.56">
+                    <om:Property Name="Ref" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_TypedProcedure_dbo.usp_GetCodesResponse" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="8cb5b59d-5b8c-4b4b-8aaa-e0dfbaf67c3b" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="59.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CallSQLStoredProcedure" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="566f29d8-c0d1-47ee-ad59-75380966a14f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="12f440c8-b0ff-4a25-9199-771d9c895e10" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.TriggerSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgTrigger" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1404f768-ec3e-4cd3-92cb-297bfcfdb987" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_TypedProcedure_dbo.usp_GetCodes" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSQLGetCodesReq" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="104b2620-9581-4b1c-8ba9-682857eca170" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQL_TypedProcedure_dbo.usp_GetCodesResponse" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSQLGetCodesResp" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="33fbe054-483d-496a-8060-bdb483c1e86e" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="d53f7aea-2227-4bee-b8e9-9048f3445ec6" ParentLink="ServiceBody_Statement" LowerBound="40.1" HigherBound="43.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="RcvTriggerPort" />
+                    <om:Property Name="MessageName" Value="msgTrigger" />
+                    <om:Property Name="OperationName" Value="TriggerOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Trigger" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="9840e70a-714c-4b0e-b103-d46df5ebab6e" ParentLink="ServiceBody_Statement" LowerBound="43.1" HigherBound="51.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct SQL GetCodes Req Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="eeca612b-2939-4c56-a04c-be4a557f2d74" ParentLink="ComplexStatement_Statement" LowerBound="46.1" HigherBound="50.1">
+                        <om:Property Name="Expression" Value="varXML  = new System.Xml.XmlDocument();&#xD;&#xA;varXML.LoadXml(@&quot;&lt;ns0:usp_GetCodes xmlns:ns0=&quot;&quot;http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo&quot;&quot; /&gt; &quot;);&#xD;&#xA;msgSQLGetCodesReq = varXML;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="GetCodes MsgAssign" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="532ddcb1-9c09-4c11-9bf8-603690dba861" ParentLink="Construct_MessageRef" LowerBound="44.23" HigherBound="44.40">
+                        <om:Property Name="Ref" Value="msgSQLGetCodesReq" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="797a6444-cf2c-455a-af36-e8a07505673a" ParentLink="ServiceBody_Statement" LowerBound="51.1" HigherBound="53.1">
+                    <om:Property Name="PortName" Value="SQLOrdersPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesReq" />
+                    <om:Property Name="OperationName" Value="GetCodes" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send GetCodes" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Receive" OID="0351fe9f-1a7c-46de-a613-885bd6bea5fd" ParentLink="ServiceBody_Statement" LowerBound="53.1" HigherBound="55.1">
+                    <om:Property Name="Activate" Value="False" />
+                    <om:Property Name="PortName" Value="SQLOrdersPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesResp" />
+                    <om:Property Name="OperationName" Value="GetCodes" />
+                    <om:Property Name="OperationMessageName" Value="Response" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive GetCodes Resp" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="9fdcd42f-8d54-4e3d-8f13-ed1a3cc0f63c" ParentLink="ServiceBody_Statement" LowerBound="55.1" HigherBound="57.1">
+                    <om:Property Name="PortName" Value="SendSQLResultPort" />
+                    <om:Property Name="MessageName" Value="msgSQLGetCodesResp" />
+                    <om:Property Name="OperationName" Value="ResultArchiveOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send SQL Result" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="2ba444ce-e5f4-438e-8dfd-64dfb3c1ae8c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.RcvTriggerType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvTriggerPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="239c215f-6290-44a8-bb52-05ed6a29702d" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="8707d9a5-eb6f-4fb6-b3b4-23cbafcf0bd5" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="17" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SQLOrdersType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SQLOrdersPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="d29a0d48-6035-465a-acf7-735f9b28e5b3" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="657123ba-8326-4f7b-88f3-99e5a5402c01" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="20" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="HowToCallSQLStoredProcedureWithoutInputs.SendSQLResultType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSQLResultPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="38770f6e-e30c-4de5-ba40-4826d1597f64" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module HowToCallSQLStoredProcedureWithoutInputs
+{
+    public porttype RcvTriggerType
+    {
+        oneway TriggerOp
+        {
+            TriggerSchema
+        };
+    };
+    internal porttype SQLOrdersType
+    {
+        requestresponse GetCodes
+        {
+            SQL_TypedProcedure_dbo.usp_GetCodes, SQL_TypedProcedure_dbo.usp_GetCodesResponse
+        };
+    };
+    internal porttype SendSQLResultType
+    {
+        oneway ResultArchiveOp
+        {
+            SQL_TypedProcedure_dbo.usp_GetCodesResponse
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service CallSQLStoredProcedure
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements RcvTriggerType RcvTriggerPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SQLOrdersType SQLOrdersPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendSQLResultType SendSQLResultPort;
+        message TriggerSchema msgTrigger;
+        message SQL_TypedProcedure_dbo.usp_GetCodes msgSQLGetCodesReq;
+        message SQL_TypedProcedure_dbo.usp_GetCodesResponse msgSQLGetCodesResp;
+        System.Xml.XmlDocument varXML;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("d53f7aea-2227-4bee-b8e9-9048f3445ec6")]
+            activate receive (RcvTriggerPort.TriggerOp, msgTrigger);
+            varXML = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9840e70a-714c-4b0e-b103-d46df5ebab6e")]
+            construct msgSQLGetCodesReq
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("eeca612b-2939-4c56-a04c-be4a557f2d74")]
+                varXML  = new System.Xml.XmlDocument();
+                varXML.LoadXml(@"<ns0:usp_GetCodes xmlns:ns0=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" /> ");
+                msgSQLGetCodesReq = varXML;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("797a6444-cf2c-455a-af36-e8a07505673a")]
+            send (SQLOrdersPort.GetCodes, msgSQLGetCodesReq);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0351fe9f-1a7c-46de-a613-885bd6bea5fd")]
+            receive (SQLOrdersPort.GetCodes, msgSQLGetCodesResp);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9fdcd42f-8d54-4e3d-8f13-ed1a3cc0f63c")]
+            send (SendSQLResultPort.ResultArchiveOp, msgSQLGetCodesResp);
+        }
+    }
+}
+
