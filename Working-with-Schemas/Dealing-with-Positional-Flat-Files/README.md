@@ -10,7 +10,7 @@ In this sample I will walk you through the required steps at design time:
 To enable the runtime to support the processing Positional Flat Files.
 
 # Building the Sample
-This are simple walkthroughs explaining the basic principles to create a flat file schema from a file delimited by symbols. 
+This are simple walkthroughs explaining the basic principles to create a flat file schema from a file delimited by positions. 
 
 ## Sample 1
 

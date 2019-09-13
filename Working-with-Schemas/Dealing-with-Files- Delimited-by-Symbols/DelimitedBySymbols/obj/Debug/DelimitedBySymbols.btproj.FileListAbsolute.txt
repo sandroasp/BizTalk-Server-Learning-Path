@@ -1,0 +1,4 @@
+C:\Development\WorkingWithFlatFiles\DelimitedBySymbols\bin\Debug\DelimitedBySymbols.dll
+C:\Development\WorkingWithFlatFiles\DelimitedBySymbols\bin\Debug\DelimitedBySymbols.pdb
+C:\Development\WorkingWithFlatFiles\DelimitedBySymbols\obj\Debug\DelimitedBySymbols.dll
+C:\Development\WorkingWithFlatFiles\DelimitedBySymbols\obj\Debug\DelimitedBySymbols.pdb
