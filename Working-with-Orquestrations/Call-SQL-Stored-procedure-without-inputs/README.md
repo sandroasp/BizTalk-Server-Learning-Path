@@ -16,7 +16,7 @@ For all the approach in this PoC, basically what we will do is create an orchest
 * Call the stored procedure and receive the response
 * And send the stored procedure result to an archive folder in or file system
 
-![General Exception](media/general-exception.jpg)
+![call a SQL Stored procedure without inputs](media/BizTalk-Call-stored-procedure-witour-inputs.png)
 
 # Read more about it
 You can read more about this topic here: [Thinking outside the box (or not): How to properly call a SQL stored procedure without any input parameters?](https://blogs.biztalk360.com/how-to-call-a-sql-stored-procedure-without-any-input-parameters/)
