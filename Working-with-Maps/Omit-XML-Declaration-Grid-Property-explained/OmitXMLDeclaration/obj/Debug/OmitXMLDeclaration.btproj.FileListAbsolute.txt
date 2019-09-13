@@ -1,0 +1,4 @@
+C:\Development\OmitXMLDeclaration\OmitXMLDeclaration\bin\Debug\OmitXMLDeclaration.dll
+C:\Development\OmitXMLDeclaration\OmitXMLDeclaration\bin\Debug\OmitXMLDeclaration.pdb
+C:\Development\OmitXMLDeclaration\OmitXMLDeclaration\obj\Debug\OmitXMLDeclaration.dll
+C:\Development\OmitXMLDeclaration\OmitXMLDeclaration\obj\Debug\OmitXMLDeclaration.pdb

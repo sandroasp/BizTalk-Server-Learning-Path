@@ -23,6 +23,13 @@ The functoid is actually quite simple to use, however, the main problem that dev
 
 in this sample we will address this issue and how can you handle.
 
+## BizTalk Mapper: Omit XML Declaration (Grid Property) explained
+The official documentation states that you should use the Omit XML Declaration property to specify whether the transformation output should include an XML declaration.
+
+In this sample we will address and explain this property and when you should use it.
+
+
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 
