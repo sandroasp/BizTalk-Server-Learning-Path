@@ -1,0 +1,7 @@
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\bin\Debug\TestProjectBizTalk.dll
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\bin\Debug\TestProjectBizTalk.pdb
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\obj\Debug\TestProjectBizTalk.dll
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\obj\Debug\TestProjectBizTalk.pdb
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\obj\Debug\TestProjectBizTalk.csprojResolveAssemblyReference.cache
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\bin\Debug\PipelineObjects.dll

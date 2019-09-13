@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ea0e6ea2-9ed4-4296-a624-5e9fbec99b48" name="Administrator@BTS2010LAB01 2014-08-25 17:16:28" runUser="BTS2010LAB01\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6bfb00a1-f0ec-4f57-81ab-89ee852f1e49">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_BTS2010LAB01 2014-08-25 17_16_28">
+      <DeploymentItem filename="C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\bin\Debug\UnitTestingFeatureWithMaps.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-25T17:16:28.4683671+01:00" queuing="2014-08-25T17:16:29.5621171+01:00" start="2014-08-25T17:16:29.8433671+01:00" finish="2014-08-25T17:16:42.7496171+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="3" passed="2" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="BTS2010LAB01" outcome="Error" timestamp="2014-08-25T17:16:42.7496171+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PersonOriginWithoutZipConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="58f69f0d-a336-3ad0-df89-60146d7c8a36">
+      <Execution id="9ef6b55e-4390-4682-926d-afbff0596de9" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginWithoutZipConstructorTest" />
+    </UnitTest>
+    <UnitTest name="HowMapsWorksMapTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72">
+      <Execution id="87c3d6b4-8d00-4c2b-b929-6c2739ad137c" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.HowMapsWorksTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HowMapsWorksMapTest" />
+    </UnitTest>
+    <UnitTest name="PersonOriginWithoutPhoneCallsConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="0a06640d-6419-c70d-d2dd-d6df4bc47402">
+      <Execution id="abc03e31-270a-466e-bdc0-0113103541fb" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginWithoutPhoneCallsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="PersonOriginConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="598dd1fa-7a15-7ad3-60e8-d107b24c75e8">
+      <Execution id="19d3e1f5-f7f0-4036-87eb-569fb608df7f" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" executionId="19d3e1f5-f7f0-4036-87eb-569fb608df7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58f69f0d-a336-3ad0-df89-60146d7c8a36" executionId="9ef6b55e-4390-4682-926d-afbff0596de9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72" executionId="87c3d6b4-8d00-4c2b-b929-6c2739ad137c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a06640d-6419-c70d-d2dd-d6df4bc47402" executionId="abc03e31-270a-466e-bdc0-0113103541fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="19d3e1f5-f7f0-4036-87eb-569fb608df7f" testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" testName="PersonOriginConstructorTest" computerName="BTS2010LAB01" duration="00:00:00.3362425" startTime="2014-08-25T17:16:29.9371171+01:00" endTime="2014-08-25T17:16:31.4371171+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19d3e1f5-f7f0-4036-87eb-569fb608df7f">
+    </UnitTestResult>
+    <UnitTestResult executionId="9ef6b55e-4390-4682-926d-afbff0596de9" testId="58f69f0d-a336-3ad0-df89-60146d7c8a36" testName="PersonOriginWithoutZipConstructorTest" computerName="BTS2010LAB01" duration="00:00:00.0023586" startTime="2014-08-25T17:16:31.4527421+01:00" endTime="2014-08-25T17:16:31.4683671+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ef6b55e-4390-4682-926d-afbff0596de9">
+    </UnitTestResult>
+    <UnitTestResult executionId="87c3d6b4-8d00-4c2b-b929-6c2739ad137c" testId="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72" testName="HowMapsWorksMapTest" computerName="BTS2010LAB01" duration="00:00:11.2656250" startTime="2014-08-25T17:16:31.4839921+01:00" endTime="2014-08-25T17:16:42.7496171+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87c3d6b4-8d00-4c2b-b929-6c2739ad137c">
+    </UnitTestResult>
+    <UnitTestResult executionId="abc03e31-270a-466e-bdc0-0113103541fb" testId="0a06640d-6419-c70d-d2dd-d6df4bc47402" testName="PersonOriginWithoutPhoneCallsConstructorTest" computerName="BTS2010LAB01" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abc03e31-270a-466e-bdc0-0113103541fb">
+    </UnitTestResult>
+  </Results>
+</TestRun>

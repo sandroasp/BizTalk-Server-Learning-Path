@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="395fa561-4eea-41f0-ab80-d9352ca0ed17" name="Administrator@BTS2010LAB01 2014-08-26 11:52:58" runUser="BTS2010LAB01\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6bfb00a1-f0ec-4f57-81ab-89ee852f1e49">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_BTS2010LAB01 2014-08-26 11_52_58">
+      <DeploymentItem filename="C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\bin\Debug\UnitTestingFeatureWithMaps.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-26T11:52:58.3482500+01:00" queuing="2014-08-26T11:52:59.6920000+01:00" start="2014-08-26T11:53:00.0826250+01:00" finish="2014-08-26T11:53:06.9576250+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="5" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PersonOriginWithoutZipConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="58f69f0d-a336-3ad0-df89-60146d7c8a36">
+      <Execution id="7c63f6fc-00dd-4229-a7e0-eb4552868fbd" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginWithoutZipConstructorTest" />
+    </UnitTest>
+    <UnitTest name="PersonOriginWithoutPhoneCallsConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="0a06640d-6419-c70d-d2dd-d6df4bc47402">
+      <Execution id="b1a7c60b-8f56-4000-86f0-71de2b66ebfd" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginWithoutPhoneCallsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="HowMapsWorksWithoutZipMapTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="ce35a9da-af57-977f-7c70-efad328f8c17">
+      <Execution id="72f04574-1517-4d27-bd66-89624db1a7d6" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.HowMapsWorksTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HowMapsWorksWithoutZipMapTest" />
+    </UnitTest>
+    <UnitTest name="HowMapsWorksMapTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72">
+      <Execution id="ba201475-f4e2-4c0d-b9bd-919843b9b6da" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.HowMapsWorksTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HowMapsWorksMapTest" />
+    </UnitTest>
+    <UnitTest name="HowMapsWorksWithoutPhoneCallsMapTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="62d234be-80e6-7985-b716-ce99226c92a3">
+      <Execution id="6a532aac-cb88-4cb1-a7f4-1d50a83f9193" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.HowMapsWorksTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HowMapsWorksWithoutPhoneCallsMapTest" />
+    </UnitTest>
+    <UnitTest name="PersonOriginConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="598dd1fa-7a15-7ad3-60e8-d107b24c75e8">
+      <Execution id="9351d365-f62a-4fb1-8235-51430cd077a9" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" executionId="9351d365-f62a-4fb1-8235-51430cd077a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58f69f0d-a336-3ad0-df89-60146d7c8a36" executionId="7c63f6fc-00dd-4229-a7e0-eb4552868fbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72" executionId="ba201475-f4e2-4c0d-b9bd-919843b9b6da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a06640d-6419-c70d-d2dd-d6df4bc47402" executionId="b1a7c60b-8f56-4000-86f0-71de2b66ebfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62d234be-80e6-7985-b716-ce99226c92a3" executionId="6a532aac-cb88-4cb1-a7f4-1d50a83f9193" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce35a9da-af57-977f-7c70-efad328f8c17" executionId="72f04574-1517-4d27-bd66-89624db1a7d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9351d365-f62a-4fb1-8235-51430cd077a9" testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" testName="PersonOriginConstructorTest" computerName="BTS2010LAB01" duration="00:00:00.4004411" startTime="2014-08-26T11:53:00.2232500+01:00" endTime="2014-08-26T11:53:01.8795000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9351d365-f62a-4fb1-8235-51430cd077a9">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c63f6fc-00dd-4229-a7e0-eb4552868fbd" testId="58f69f0d-a336-3ad0-df89-60146d7c8a36" testName="PersonOriginWithoutZipConstructorTest" computerName="BTS2010LAB01" duration="00:00:00.0012916" startTime="2014-08-26T11:53:01.8951250+01:00" endTime="2014-08-26T11:53:01.9107500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c63f6fc-00dd-4229-a7e0-eb4552868fbd">
+    </UnitTestResult>
+    <UnitTestResult executionId="ba201475-f4e2-4c0d-b9bd-919843b9b6da" testId="1d266a0e-a8ae-7c6e-94d8-01300a7e5f72" testName="HowMapsWorksMapTest" computerName="BTS2010LAB01" duration="00:00:02.9375877" startTime="2014-08-26T11:53:01.9420000+01:00" endTime="2014-08-26T11:53:04.8951250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba201475-f4e2-4c0d-b9bd-919843b9b6da">
+    </UnitTestResult>
+    <UnitTestResult executionId="b1a7c60b-8f56-4000-86f0-71de2b66ebfd" testId="0a06640d-6419-c70d-d2dd-d6df4bc47402" testName="PersonOriginWithoutPhoneCallsConstructorTest" computerName="BTS2010LAB01" duration="00:00:00.0010599" startTime="2014-08-26T11:53:04.8951250+01:00" endTime="2014-08-26T11:53:04.9107500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1a7c60b-8f56-4000-86f0-71de2b66ebfd">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a532aac-cb88-4cb1-a7f4-1d50a83f9193" testId="62d234be-80e6-7985-b716-ce99226c92a3" testName="HowMapsWorksWithoutPhoneCallsMapTest" computerName="BTS2010LAB01" duration="00:00:01.5829656" startTime="2014-08-26T11:53:04.9263750+01:00" endTime="2014-08-26T11:53:06.5201250+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a532aac-cb88-4cb1-a7f4-1d50a83f9193">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProjectBizTalk.HowMapsWorksTest.HowMapsWorksWithoutPhoneCallsMapTest threw exception: 
+Microsoft.BizTalk.TestTools.BizTalkTestAssertFailException: Mapper Compiler: Map output validation failure</Message>
+          <StackTrace>    at Microsoft.BizTalk.TestTools.Mapper.TestableMapBase.TestMap(String inputInstanceFilename, InputInstanceType inputType, String outputInstanceFilename, OutputInstanceType outputType)
+   at TestProjectBizTalk.HowMapsWorksTest.HowMapsWorksWithoutPhoneCallsMapTest() in C:\Development\UnitTestingFeatureWithMaps\TestProjectBizTalk\HowMapsWorksTest.cs:line 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="72f04574-1517-4d27-bd66-89624db1a7d6" testId="ce35a9da-af57-977f-7c70-efad328f8c17" testName="HowMapsWorksWithoutZipMapTest" computerName="BTS2010LAB01" duration="00:00:00.0996836" startTime="2014-08-26T11:53:06.5513750+01:00" endTime="2014-08-26T11:53:06.6607500+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72f04574-1517-4d27-bd66-89624db1a7d6">
+    </UnitTestResult>
+  </Results>
+</TestRun>

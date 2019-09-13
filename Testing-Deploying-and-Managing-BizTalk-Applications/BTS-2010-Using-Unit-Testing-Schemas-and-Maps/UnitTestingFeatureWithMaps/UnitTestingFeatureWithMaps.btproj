@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21107</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B99FE6D3-ADE6-4DBE-A201-E5DD874EC820}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>UnitTestingFeatureWithMaps</RootNamespace>
+    <AssemblyName>UnitTestingFeatureWithMaps</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <EnableUnitTesting>True</EnableUnitTesting>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>UnitTest.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schemas\PeopleOrigin.xsd.cs">
+      <DependentUpon>PeopleOrigin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schemas\PeopleTarget.xsd.cs">
+      <DependentUpon>PeopleTarget.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schemas\PersonOrigin.xsd.cs">
+      <DependentUpon>PersonOrigin.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schemas\PersonTarget.xsd.cs">
+      <DependentUpon>PersonTarget.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Schemas\PersonTarget2.xsd.cs">
+      <DependentUpon>PersonTarget2.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="Maps\BasicsOfMaps.btm">
+      <TypeName>BasicsOfMaps</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\HowMapsWorks.btm">
+      <TypeName>HowMapsWorks</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\LinksOutOfOrder.btm">
+      <TypeName>LinksOutOfOrder</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\LinksPerOrder.btm">
+      <TypeName>LinksPerOrder</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\ScriptingFunctoidSample.btm">
+      <TypeName>ScriptingFunctoidSample</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+    <Map Include="Maps\WorkingWithLabels.btm">
+      <TypeName>WorkingWithLabels</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Maps</Namespace>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="Schemas\PeopleOrigin.xsd">
+      <TypeName>PeopleOrigin</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Schemas</Namespace>
+    </Schema>
+    <Schema Include="Schemas\PeopleTarget.xsd">
+      <TypeName>PeopleTarget</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Schemas</Namespace>
+    </Schema>
+    <Schema Include="Schemas\PersonOrigin.xsd">
+      <TypeName>PersonOrigin</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Schemas</Namespace>
+    </Schema>
+    <Schema Include="Schemas\PersonTarget.xsd">
+      <TypeName>PersonTarget</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Schemas</Namespace>
+    </Schema>
+    <Schema Include="Schemas\PersonTarget2.xsd">
+      <TypeName>PersonTarget2</TypeName>
+      <Namespace>UnitTestingFeatureWithMaps.Schemas</Namespace>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnitTest.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

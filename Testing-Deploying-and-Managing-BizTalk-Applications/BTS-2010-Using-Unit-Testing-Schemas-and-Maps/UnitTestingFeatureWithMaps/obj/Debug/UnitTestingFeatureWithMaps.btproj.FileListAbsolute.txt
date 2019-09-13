@@ -1,0 +1,4 @@
+C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\bin\Debug\UnitTestingFeatureWithMaps.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\bin\Debug\UnitTestingFeatureWithMaps.pdb
+C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\obj\Debug\UnitTestingFeatureWithMaps.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\obj\Debug\UnitTestingFeatureWithMaps.pdb

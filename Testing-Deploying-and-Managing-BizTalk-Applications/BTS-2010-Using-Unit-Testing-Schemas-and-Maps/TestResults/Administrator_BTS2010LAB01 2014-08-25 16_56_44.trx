@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="10c7d881-30c6-4633-846e-785f2ad071b7" name="Administrator@BTS2010LAB01 2014-08-25 16:56:44" runUser="BTS2010LAB01\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6bfb00a1-f0ec-4f57-81ab-89ee852f1e49">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_BTS2010LAB01 2014-08-25 16_56_44">
+      <DeploymentItem filename="C:\Development\UnitTestingFeatureWithMaps\UnitTestingFeatureWithMaps\bin\Debug\UnitTestingFeatureWithMaps.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-25T16:56:44.9839921+01:00" queuing="2014-08-25T16:56:46.0152421+01:00" start="2014-08-25T16:56:46.2652421+01:00" finish="2014-08-25T16:56:55.3902421+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PersonOriginConstructorTest" storage="c:\development\unittestingfeaturewithmaps\testprojectbiztalk\bin\debug\testprojectbiztalk.dll" id="598dd1fa-7a15-7ad3-60e8-d107b24c75e8">
+      <Execution id="a930e2e0-b415-4970-8ac1-2530554efd65" />
+      <TestMethod codeBase="C:/Development/UnitTestingFeatureWithMaps/TestProjectBizTalk/bin/Debug/TestProjectBizTalk.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProjectBizTalk.PersonOriginTest, TestProjectBizTalk, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PersonOriginConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" executionId="a930e2e0-b415-4970-8ac1-2530554efd65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a930e2e0-b415-4970-8ac1-2530554efd65" testId="598dd1fa-7a15-7ad3-60e8-d107b24c75e8" testName="PersonOriginConstructorTest" computerName="BTS2010LAB01" duration="00:00:06.3157693" startTime="2014-08-25T16:56:46.3746171+01:00" endTime="2014-08-25T16:56:54.3433671+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a930e2e0-b415-4970-8ac1-2530554efd65">
+    </UnitTestResult>
+  </Results>
+</TestRun>
