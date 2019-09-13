@@ -1,0 +1,7 @@
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\bin\Debug\BizTalk.Logical.Functoids.dll
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\bin\Debug\BizTalk.Logical.Functoids.pdb
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\obj\Debug\BizTalk.Logical.Functoids.LogicalResources.resources
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\obj\Debug\BizTalk.Logical.Functoids.csproj.GenerateResource.Cache
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\obj\Debug\BizTalk.Logical.Functoids.dll
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\obj\Debug\BizTalk.Logical.Functoids.pdb
+C:\Development\CodePlex\btsmapextutilitypack\BizTalk.MapperExtensions.UtilityPack-2013\BizTalk.Logical.Functoids\obj\Debug\BizTalk.Logical.Functoids.csprojResolveAssemblyReference.cache

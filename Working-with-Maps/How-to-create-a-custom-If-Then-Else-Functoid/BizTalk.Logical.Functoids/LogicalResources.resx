@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IDB_ADVLOGICALAND" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALAND.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALEQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALEQ.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALGT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALGT.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALGTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALGTE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALLT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALLT.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALLTE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALLTE.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALNE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\notequal.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALNOT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALNOT.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDB_ADVLOGICALOR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IDB_ADVLOGICALOR.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_ADVLOGICALAND_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Logical AND functoid to return the logical AND of input parameters. This functoid requires two to one hundred input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALAND_NAME" xml:space="preserve">
+    <value>Advance Logical AND Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALAND_TOOLTIP" xml:space="preserve">
+    <value>Returns the logical AND of parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALEQ_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Equal functoid to return the value "true" if the first input parameter is equal to the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALEQ_NAME" xml:space="preserve">
+    <value>Advance Equal Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALEQ_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is equal to the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALGTE_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Greater Than or Equal To functoid to return the value "true" if the first input parameter is greater than or equal to the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALGTE_NAME" xml:space="preserve">
+    <value>Advance Greater Than or Equal To Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALGTE_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is greater than or equal to the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALGT_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Greater Than functoid to return the value "true" if the first input parameter is greater than the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALGT_NAME" xml:space="preserve">
+    <value>Advance Greater Than Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALGT_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is greater than the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALLTE_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Less Than or Equal To functoid to return the value "true" if the first input parameter is less than or equal to the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALLTE_NAME" xml:space="preserve">
+    <value>Advance Less Than or Equal To Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALLTE_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is less than or equal to the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALLT_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Less Than functoid to return the value "true" if the first input parameter is less than the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALLT_NAME" xml:space="preserve">
+    <value>Advance Less Than Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALLT_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is less than the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALNET_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Not Equal functoid to return the value “true” if the first input parameter is not equal to the second input parameter. This functoid requires two input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALNE_NAME" xml:space="preserve">
+    <value>Advance Not Equal Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALNE_TOOLTIP" xml:space="preserve">
+    <value>Returns "true" if the first parameter is not equal to the second parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALNOT_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Logical NOT functoid to return the logical inversion of the input parameter. This functoid requires one input parameter only.</value>
+  </data>
+  <data name="IDS_ADVLOGICALNOT_NAME" xml:space="preserve">
+    <value>Advance Logical NOT Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALNOT_TOOLTIP" xml:space="preserve">
+    <value>Returns the logical inversion of the input parameter.</value>
+  </data>
+  <data name="IDS_ADVLOGICALOR_DESCRIPTION" xml:space="preserve">
+    <value>Use the Advance Logical OR functoid to return the logical OR of input parameters. The input parameters have to be boolean or numeric. This functoid requires two to one hundred input parameters.</value>
+  </data>
+  <data name="IDS_ADVLOGICALOR_NAME" xml:space="preserve">
+    <value>Advance Logical OR Functoid</value>
+  </data>
+  <data name="IDS_ADVLOGICALOR_TOOLTIP" xml:space="preserve">
+    <value>Returns the logical OR of parameters.</value>
+  </data>
+  <data name="IDS_IFELSEFUNCTOID_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IfElse.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDS_IFELSEFUNCTOID_DESCRIPTION" xml:space="preserve">
+    <value>Use the If-Then-Else Functoid to return a value from one of two input parameters based on a condition. If the condition (first input) is True, then the value of the second input parameter is returned, otherwise the Third input is returned.</value>
+  </data>
+  <data name="IDS_IFELSEFUNCTOID_NAME" xml:space="preserve">
+    <value>If-Then-Else Functoid</value>
+  </data>
+  <data name="IDS_IFELSEFUNCTOID_TOOLTIP" xml:space="preserve">
+    <value>This functoid requires three input parameters.
+Parameters:
+- Boolean representing the result of a previous condition
+- The return value if the condition is True. 
+- The return value if the condition is False.</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IfThenElseOperations", "IfThenElseOperations\IfThenElseOperations.btproj", "{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizTalk.Logical.Functoids", "BizTalk.Logical.Functoids\BizTalk.Logical.Functoids.csproj", "{ACCEAEA3-DA72-4E2C-9892-D259FC04911B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{488C46CE-0DA4-44B9-B76C-9A969DA2E5DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ACCEAEA3-DA72-4E2C-9892-D259FC04911B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACCEAEA3-DA72-4E2C-9892-D259FC04911B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACCEAEA3-DA72-4E2C-9892-D259FC04911B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACCEAEA3-DA72-4E2C-9892-D259FC04911B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
