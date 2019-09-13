@@ -1,0 +1,4 @@
+﻿Sandro;Pereira;1978;Crestuma;4415
+Vânia;Braziela;1981;Vila Nova de Gaia;4300
+José;Silva;1972;Crestuma
+Rui;Barbosa;1975;Lever;4415

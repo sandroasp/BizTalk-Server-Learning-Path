@@ -1,0 +1,4 @@
+﻿Electronic;Microsoft Lumia 950 XL;580,00;2015-11
+Clothing;Hugo Boss Casual Showerproof Full Zip Quilted Jacket;220,00;2015-12
+Fragrance;Artisan by John Varvatos;50,00;2015-12
+Restaurant;The Yeatman Porto;140,00;2015-12
