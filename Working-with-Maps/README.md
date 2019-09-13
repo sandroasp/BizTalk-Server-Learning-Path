@@ -28,6 +28,10 @@ The official documentation states that you should use the Omit XML Declaration p
 
 In this sample we will address and explain this property and when you should use it.
 
+## BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
+One question that we always try to answer or explain is when to use the Built-in Functoids (or basic/standard Functoids), Scripting Functoids or when to developer Custom Functoids. Well there isn’t a correct answer to this question and we only can suggest some best practices for you to use.
+
+You need to remember and learn that there’s never only a single way and there are no right or wrong way method to solve a mapping problem, we can find more effective ways (performances) than others or easiest ways to solve the problem, yet the output generated will be the same. Quite often, deciding which way is the best approach to use or have the right balance between the easier and effective way can be difficult and often the approach used depend on the expertise and personal choice of the developers or company guidelines
 
 
 # About Me
