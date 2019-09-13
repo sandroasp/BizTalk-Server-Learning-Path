@@ -1,0 +1,10 @@
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\UnitTestingFeatureWithMaps.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\Microsoft.BizTalk.TOM.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\PipelineObjects.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\UnitTestingFeatureWithMaps.pdb
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Development\UnitTestingFeatureWithMaps\UnitTestProject1\bin\Debug\SandroPereira.BizTalk.MapTestTools.dll

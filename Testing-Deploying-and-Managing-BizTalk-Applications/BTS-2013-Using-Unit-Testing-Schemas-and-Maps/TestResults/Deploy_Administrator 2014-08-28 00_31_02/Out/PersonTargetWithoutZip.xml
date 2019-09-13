@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ns0:PersonTarget2 xmlns:ns0="http://HowMapsWorks.PersonTarget2">
+	<Address>Crestuma, Porto, Portugal</Address>
+	<FullName>Pereira, Sandro</FullName>
+	<Age>36</Age>
+	<PhoneBilling>
+		<TotalInternational>15</TotalInternational>
+		<TotalNational>2.7</TotalNational>
+	</PhoneBilling>
+</ns0:PersonTarget2>
