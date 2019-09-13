@@ -6,7 +6,7 @@ Syntax Transformations occurs in the receive or send pipelines and aim to transf
 ### Dealing with Positional Flat Files
 This is a simple walkthrough explaining the basic principles to create a flat file schema from a file delimited by positions. 
 
-### 
+### Dealing with Files Delimited by Symbols
 This is a simple walkthrough explaining the basic principles to create a flat file schema from a file delimited by symbols. 
 
 
