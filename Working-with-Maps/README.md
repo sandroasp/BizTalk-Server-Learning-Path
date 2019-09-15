@@ -17,6 +17,11 @@ When exchanging messages in an Enterprise Application Integration (EAI) or Busin
 
 Conditional mapping is a fixed condition that helps us to filter the result set that is being mapped from the source message.
 
+### BizTalk Mapper Patterns: Sorting Pattern
+The Sorting Pattern is used to sort the contents of a message body to get them into a certain order, assuming that the message body contains a list of items that can be sorted. Most of the times are bounded with the Grouping Pattern.
+
+XSLT 1.0 lets you sort elements, however, it will force you to jump through several hoops to do anything extra with the groups that result from the sort and for accomplish this we need to use custom XSLT inside the BizTalk Mapper.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids

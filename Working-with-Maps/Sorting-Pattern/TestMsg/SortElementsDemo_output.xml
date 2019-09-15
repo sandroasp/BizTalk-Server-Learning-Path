@@ -1,0 +1,7 @@
+﻿<ns0:Persons xmlns:ns0="http://BizTalkMapperSortingPattern.Persons"><Person><Name>José António Silva</Name><Nacionality>Portuguese</Nacionality><ListCountriesVisited><Country>USA</Country><Country>UK</Country><Country>Spain</Country><Country>Italy</Country><Country>Irland</Country><Country>France</Country><Country>Cabo Verde</Country>
+      </ListCountriesVisited>
+    </Person><Person><Name>Márcia Teixeira</Name><Nacionality>Portuguese</Nacionality><ListCountriesVisited><Country>USA</Country><Country>Spain</Country>
+      </ListCountriesVisited>
+    </Person><Person><Name>Sandro Pereira</Name><Nacionality>Portuguese</Nacionality><ListCountriesVisited><Country>USA</Country><Country>UK</Country><Country>Switzerland</Country><Country>Spain</Country><Country>Norway</Country><Country>Mexico</Country><Country>Jamaica</Country><Country>Italy</Country><Country>Irland</Country><Country>France</Country><Country>Cuba</Country>
+      </ListCountriesVisited>
+    </Person></ns0:Persons>
