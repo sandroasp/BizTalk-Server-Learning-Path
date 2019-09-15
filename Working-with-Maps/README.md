@@ -22,6 +22,13 @@ The Sorting Pattern is used to sort the contents of a message body to get them i
 
 XSLT 1.0 lets you sort elements, however, it will force you to jump through several hoops to do anything extra with the groups that result from the sort and for accomplish this we need to use custom XSLT inside the BizTalk Mapper.
 
+### BizTalk Mapper Patterns: Content Filter Pattern (Data Cleaning Pattern)
+In this scenario the target system will require less information than the source system will provide, for example: the source system will provided the customer ID, customer name and address but the target system will only need the customer ID.
+
+Here we will remove unimportant data items from a message, sometimes also based on specific criteria, and we leave only the important ones.
+
+The Content Filter does not necessarily just remove data elements and sometimes can also be used to simplify the structure of the message.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
