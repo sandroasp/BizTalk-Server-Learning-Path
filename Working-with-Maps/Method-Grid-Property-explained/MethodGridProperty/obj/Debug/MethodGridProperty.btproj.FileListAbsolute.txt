@@ -1,0 +1,4 @@
+C:\Development\MethodGridProperty\MethodGridProperty\bin\Debug\MethodGridProperty.dll
+C:\Development\MethodGridProperty\MethodGridProperty\bin\Debug\MethodGridProperty.pdb
+C:\Development\MethodGridProperty\MethodGridProperty\obj\Debug\MethodGridProperty.dll
+C:\Development\MethodGridProperty\MethodGridProperty\obj\Debug\MethodGridProperty.pdb

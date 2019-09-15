@@ -49,6 +49,11 @@ The official documentation states that you should use the Copy Processing Instru
 
 In this sample we will address and explain this property and when you should use it.
 
+### BizTalk Mapper: Method (Grid Property) explained
+The official documentation states that you should use the Method property to specify the overall method for producing the output of the transformation.
+
+In this sample we will address and explain this property and when you should use it.
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 
