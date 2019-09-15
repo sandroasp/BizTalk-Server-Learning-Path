@@ -49,6 +49,11 @@ The official documentation states that you should use the Method property to spe
 
 In this sample we will address and explain this property and when you should use it.
 
+### BizTalk Mapper: When to use the Ignore Namespaces for Links property
+The official documentation states that you should use the “Ignore Namespaces for Links” property to indicate whether the links stored in the map contain any references to the namespaces used in the schemas.
+
+In this sample we will address and explain this property and when you should use it.
+
 ### BizTalk Mapper: TreatElementsAsRecords attribute of the mapsource element
 This is probably one of the most undocumented attributes, and the most difficult to explain and understand, present in the BizTalk Mapper. The official documentation states that when you use a Looping functoid, a Conditional functoid, or a Value Mapping functoid, an <xsl:for-each> statement is generated in the compiled map. If the child field of the destination schema has unbounded maximum occurrences, the <xsl:for-each> statement is put at the child field. If the child field does not have unbounded maximum occurrences, the <xsl:for-each> statement is put at the parent field of the child field.
 
