@@ -39,11 +39,6 @@ The official documentation states that you should use the Omit XML Declaration p
 
 In this sample we will address and explain this property and when you should use it.
 
-### BizTalk Mapper: TreatElementsAsRecords attribute of the mapsource element
-This is probably one of the most undocumented attributes, and the most difficult to explain and understand, present in the BizTalk Mapper. The official documentation states that when you use a Looping functoid, a Conditional functoid, or a Value Mapping functoid, an <xsl:for-each> statement is generated in the compiled map. If the child field of the destination schema has unbounded maximum occurrences, the <xsl:for-each> statement is put at the child field. If the child field does not have unbounded maximum occurrences, the <xsl:for-each> statement is put at the parent field of the child field.
-
-In this sample we will address and explain this property and when you should use it.
-
 ### BizTalk Mapper: Copy Processing Instructions (PIs) (Grid Property) explained
 The official documentation states that you should use the Copy Processing Instructions (PIs) property to specify whether any processing instructions found in the input instance message should be copied to the output instance message during transformation.
 
@@ -51,6 +46,18 @@ In this sample we will address and explain this property and when you should use
 
 ### BizTalk Mapper: Method (Grid Property) explained
 The official documentation states that you should use the Method property to specify the overall method for producing the output of the transformation.
+
+In this sample we will address and explain this property and when you should use it.
+
+### BizTalk Mapper: TreatElementsAsRecords attribute of the mapsource element
+This is probably one of the most undocumented attributes, and the most difficult to explain and understand, present in the BizTalk Mapper. The official documentation states that when you use a Looping functoid, a Conditional functoid, or a Value Mapping functoid, an <xsl:for-each> statement is generated in the compiled map. If the child field of the destination schema has unbounded maximum occurrences, the <xsl:for-each> statement is put at the child field. If the child field does not have unbounded maximum occurrences, the <xsl:for-each> statement is put at the parent field of the child field.
+
+In this sample we will address and explain this property and when you should use it.
+
+### BizTalk Mapper: PreserveSequenceOrder attribute of the mapsource element
+Sequence groups in XSD schemas do not provide a looping context because they are not represented in the message instance. Without looping possibilities on the sequence group, the Mapper compiler does not generate the appropriate XSLT to maintain the segment order. As a result, relative context that is present in the input instance is lost, which makes the output instances useless for further processing that depends on the relative context.
+
+You can use the PreserveSequenceOrder flag to maintain record order when mapping a repeating sequence to another repeating sequence. By default, the value of the flag is set to No to preserve the functionality of existing maps created in earlier BizTalk Server versions where the flag is not present. In the newly created maps, the flag will be present with its value set to No. To maintain segment order, you must explicitly set the value to Yes in the .btm file
 
 In this sample we will address and explain this property and when you should use it.
 
