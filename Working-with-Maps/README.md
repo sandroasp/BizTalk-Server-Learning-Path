@@ -32,6 +32,13 @@ The functoid is actually quite simple to use, however, the main problem that dev
 
 in this sample we will address this issue and how can you handle.
 
+## Mapping Exercices
+
+### BizTalk Mapper: Working With Nillable Values (xsi:nil="true")
+Basically, there are two properties inside the schema element decides whether an element can be absent from the document: Min Occurs and Nillable.
+
+In this sample scenario, we will have 2 mandatory elements that can be nillable that we need to map to the destination schema. In this scenario, all the destination elements are also mandatory and we need to fill them with a valid value or specify the nillable property as true: so if the element exists we need to map the correct source value otherwise we need to set the destination element as nillable.
+
 ## Advance Properties
 
 ### BizTalk Mapper: Omit XML Declaration (Grid Property) explained

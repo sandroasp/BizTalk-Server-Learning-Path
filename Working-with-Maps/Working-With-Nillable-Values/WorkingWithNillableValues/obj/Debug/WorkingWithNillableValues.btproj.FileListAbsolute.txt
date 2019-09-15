@@ -1,0 +1,4 @@
+C:\Development\WorkingWithNillableValues\WorkingWithNillableValues\bin\Debug\WorkingWithNillableValues.dll
+C:\Development\WorkingWithNillableValues\WorkingWithNillableValues\bin\Debug\WorkingWithNillableValues.pdb
+C:\Development\WorkingWithNillableValues\WorkingWithNillableValues\obj\Debug\WorkingWithNillableValues.dll
+C:\Development\WorkingWithNillableValues\WorkingWithNillableValues\obj\Debug\WorkingWithNillableValues.pdb
