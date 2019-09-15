@@ -61,6 +61,13 @@ You can use the PreserveSequenceOrder flag to maintain record order when mapping
 
 In this sample we will address and explain this property and when you should use it.
 
+### BizTalk Mapper: GenerateDefaultFixedNodes attribute of the mapsource element
+When the Mapper is using a schema that has a very large instance footprint with deep complex structures and/or recursive nodes, testing the map, validating the map, or compiling the map could take a long time or, in the worst case, result in an "out of memory" error. This could happen with small, complex schemas as well as with large schemas.
+
+The problem with complex schemas is due to the fact that the Mapper has to recursively load the entire schema tree looking for nodes that either have links connected to them or have the Value property set on them. You can alleviate this problem by setting the GenerateDefaultFixedNodes flag of the mapsource element in the .btm files to “No”.
+
+In this sample we will address and explain this property and when you should use it.
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 

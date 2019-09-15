@@ -1,0 +1,4 @@
+C:\Development\GenerateDefaultFixedNodes\GenerateDefaultFixedNodes\bin\Debug\GenerateDefaultFixedNodes.dll
+C:\Development\GenerateDefaultFixedNodes\GenerateDefaultFixedNodes\bin\Debug\GenerateDefaultFixedNodes.pdb
+C:\Development\GenerateDefaultFixedNodes\GenerateDefaultFixedNodes\obj\Debug\GenerateDefaultFixedNodes.dll
+C:\Development\GenerateDefaultFixedNodes\GenerateDefaultFixedNodes\obj\Debug\GenerateDefaultFixedNodes.pdb
