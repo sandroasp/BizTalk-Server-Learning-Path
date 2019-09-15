@@ -1,0 +1,12 @@
+<!-- document comment outside of the root element -->
+<?pi_target pre-root processing instruction ?>
+<root>
+  <!-- the following paragraph is a pangram -->
+  <para>The quick brown fox jumps over the lazy dog.</para>
+  <?pi_target processing instructions may be modified ?>
+  <para>A quick movement of the enemy will jeopardize six gunboats.</para>
+  <!-- comments may be deleted -->
+  <para>A final paragraph</para>
+</root>
+<!-- comments can appear after the root element -->
+<?pi_target so can processing instructions ?>

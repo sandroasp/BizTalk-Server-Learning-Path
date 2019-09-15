@@ -44,6 +44,11 @@ This is probably one of the most undocumented attributes, and the most difficult
 
 In this sample we will address and explain this property and when you should use it.
 
+### BizTalk Mapper: Copy Processing Instructions (PIs) (Grid Property) explained
+The official documentation states that you should use the Copy Processing Instructions (PIs) property to specify whether any processing instructions found in the input instance message should be copied to the output instance message during transformation.
+
+In this sample we will address and explain this property and when you should use it.
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 

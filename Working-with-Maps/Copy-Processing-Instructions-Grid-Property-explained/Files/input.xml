@@ -1,0 +1,4 @@
+﻿<?mso-infoPathSolution solutionVersion="1.0.0.2" href="path/manifest.xsf" productVersion="11.0.5329" PIVersion="1.0.0.0" ?>
+<ns0:Input xmlns:ns0="http://MappingProcessingInstructions.Input">
+  <Teste>This is a test of text</Teste> 
+</ns0:Input>
