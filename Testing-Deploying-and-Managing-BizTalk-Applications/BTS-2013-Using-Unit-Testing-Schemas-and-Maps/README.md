@@ -1,4 +1,4 @@
-# BizTalk Server 2010: Using the Unit Testing Feature with Schemas and Maps
+# BizTalk Server 2013: Using the Unit Testing Feature with Schemas and Maps
 
 # Introduction
 Testing is an important aspect of (BizTalk) application life cycle. Before a developer deploys his solution he needs to be confident that it will perform, and do the task(s) it is intended to do. It is a developer responsibility that he creates a robust application. Therefore he needs to unit test his BizTalk application artifacts before he deploys them for further testing.
