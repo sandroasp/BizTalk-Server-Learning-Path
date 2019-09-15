@@ -1,0 +1,17 @@
+﻿<ns0:Root xmlns:ns0="http://LoopingPattern.InputSchema">
+<Record>
+<Field Name="Param1" Value="1000"/>
+<Field Name="Param2" Value="2000"/>
+<Field Name="Param3" Value="3000"/>
+</Record>
+<Record>
+<Field Name="Param1" Value="1001"/>
+<Field Name="Param2" Value="2002"/>
+<Field Name="Param3" Value="3003"/>
+</Record>
+<Record>
+<Field Name="Param1" Value="1100"/>
+<Field Name="Param2" Value="2200"/>
+<Field Name="Param3" Value="3300"/>
+</Record>
+</ns0:Root>

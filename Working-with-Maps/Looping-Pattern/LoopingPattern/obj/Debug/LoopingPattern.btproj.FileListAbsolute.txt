@@ -1,0 +1,4 @@
+C:\Development\12- LoopingPattern\LoopingPattern\bin\Debug\LoopingPattern.dll
+C:\Development\12- LoopingPattern\LoopingPattern\bin\Debug\LoopingPattern.pdb
+C:\Development\12- LoopingPattern\LoopingPattern\obj\Debug\LoopingPattern.dll
+C:\Development\12- LoopingPattern\LoopingPattern\obj\Debug\LoopingPattern.pdb

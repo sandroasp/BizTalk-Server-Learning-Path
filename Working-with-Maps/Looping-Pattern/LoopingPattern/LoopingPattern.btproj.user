@@ -1,0 +1,756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}">
+        <Files>
+		<File Path="01-LoppingTypes\01-OneToOne\MasterAddresses.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\01-OneToOne\OneToOneMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Survays_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\01-OneToOne\OneToOneMapReadable.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Survays_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\01-OneToOne\Survays.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\02-OneToMany\Lists.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\02-OneToMany\OneToManyMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Survays_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\02-OneToMany\OneToManyMapReadable.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Survays_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\03-ManyToOne\ManyToOneMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\03-ManyToOne\ProjectParticipant.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\03-ManyToOne\ProjectTender.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\04-ManyToMany\ManyToManyMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\04-ManyToMany\ProjectParticipant2.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\05-NestedToOne\NestedPurchaseOrder.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\05-NestedToOne\NestedToOneMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\05-NestedToOne\NestedToOneMapXSLT.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\NestedPurchaseOrder_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\05-NestedToOne\OrderSimple.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\CreateAccount.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\NestedAccount.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\NestedToNestedMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\OtherExample\Families.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Families_output.xml</EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Families_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMapCorrect.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Families_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMapOptimized.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\LoopTypes\Families_output.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="01-LoppingTypes\06-NestedToNested\OtherExample\SchoolApplicationForm.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\ConditionalLoopingMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\Surveys.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\ConditionalLoopingMapIncorrect.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\ConditionalLoopingMapOrganize.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\ConditionalLoopingMapXSLT.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\Surveys.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\MasterAddress.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="ConditionalLooping\Surveys.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\FlatStructureToRepeatStructureMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\Lines.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\Lines.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\Lines.xml</EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\LinesOutput.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\OtherExample\AddressFlatStructureToRepeatStructureMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\PersonAddressFlatStructure.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\OtherExample\PersonAddressFlatStructure.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\OtherExample\PersonAddressRepeatingStructure.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\ScopeTableFunctoid\InputScopeTableFunctoid.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\ScopeTableFunctoid\MapScopeTableFunctoid.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="FlatStructureToRepeatStructure\ScopeTableFunctoid\OutputScopeTableFunctoid.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFlatteningFunctoid\LoppingFlatMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\input.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFlatteningFunctoid\LoppingFlatMapImproved.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\input.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFlatteningFunctoid\OutputFlat.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFlatteningFunctoid\OutputFlat1.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\input.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\input1.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\LoopingMap.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\TestFiles\input.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\LoopingMapImproved.btm">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\Output.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="LoopValueMappingFunctoid\Output1.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="X1EDISample\Maps\Enrollment_to_5010_834.btm">
+			<ValidateTestMapInput>False</ValidateTestMapInput>
+			<ValidateTestMapOutput>False</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\LoopingPattern\X1EDISample\Files\Enrollment_input.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="X1EDISample\Maps\Enrollment_to_5010_834WithXSLT.btm">
+			<ValidateTestMapInput>False</ValidateTestMapInput>
+			<ValidateTestMapOutput>False</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename>C:\Development\12- LoopingPattern\LoopingPattern\X1EDISample\Files\Enrollment_input2.xml</TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>1</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="X1EDISample\Schemas\Enrollment.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+		<File Path="X1EDISample\Schemas\X12_00501_834.xsd">
+			<ValidateTestMapInput>True</ValidateTestMapInput>
+			<ValidateTestMapOutput>True</ValidateTestMapOutput>
+			<TestMapInputInstanceFilename></TestMapInputInstanceFilename>
+			<TestMapOutputInstanceFilename></TestMapOutputInstanceFilename>
+			<TestMapSourceType>0</TestMapSourceType>
+			<TestMapTargetType>0</TestMapTargetType>
+			<EditorOutputInstanceFilename></EditorOutputInstanceFilename>
+			<EditorInputInstanceFilename></EditorInputInstanceFilename>
+			<GenerateInstanceOutputType>0</GenerateInstanceOutputType>
+			<ValidateInstanceInputType>0</ValidateInstanceInputType>
+			<PropertySchemaFileName>PropertySchema.xsd</PropertySchemaFileName>
+			<AutoRefreshSchema>0</AutoRefreshSchema>
+		</File>
+	</Files>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

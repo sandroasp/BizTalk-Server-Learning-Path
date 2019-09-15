@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D14B03F-CCF0-4029-A310-7B8B41833403}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>LoopingPattern</RootNamespace>
+    <AssemblyName>LoopingPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="X1EDISample\Schemas\Enrollment.cs">
+      <DependentUpon>Enrollment.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="LoopValueMappingFunctoid\input.xsd">
+      <TypeName>input</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="LoopValueMappingFunctoid\input1.xsd">
+      <TypeName>input1</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="LoopValueMappingFunctoid\Output.xsd">
+      <TypeName>Output</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="LoopValueMappingFunctoid\Output1.xsd">
+      <TypeName>Output1</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="LoopValueMappingFunctoid\LoopingMap.btm">
+      <TypeName>LoopingMap</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="LoopValueMappingFunctoid\LoopingMapImproved.btm">
+      <TypeName>LoopingMap2</TypeName>
+      <Namespace>LoopingPattern</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="LoopValueMappingFlatteningFunctoid\OutputFlat.xsd">
+      <TypeName>OutputFlat</TypeName>
+      <Namespace>LoopingPattern.LoopValueMappingFlatteningFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="LoopValueMappingFlatteningFunctoid\OutputFlat1.xsd">
+      <TypeName>OutputFlat1</TypeName>
+      <Namespace>LoopingPattern.LoopValueMappingFlatteningFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="LoopValueMappingFlatteningFunctoid\LoppingFlatMap.btm">
+      <TypeName>LoppingFlatMap</TypeName>
+      <Namespace>LoopingPattern.LoopValueMappingFlatteningFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="LoopValueMappingFlatteningFunctoid\LoppingFlatMapImproved.btm">
+      <TypeName>LoppingFlatMapSol2</TypeName>
+      <Namespace>LoopingPattern.LoopValueMappingFlatteningFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="ConditionalLooping\Surveys.xsd">
+      <TypeName>Surveys</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="ConditionalLooping\MasterAddress.xsd">
+      <TypeName>MasterAddress</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ConditionalLooping\ConditionalLoopingMap.btm">
+      <TypeName>ConditionalLoopingMap</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ConditionalLooping\ConditionalLoopingMapIncorrect.btm">
+      <TypeName>ConditionalLoopingMapReadable</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="ConditionalLooping\ConditionalLoopingMapXSLT.btm">
+      <TypeName>ConditionalLoopingMapXSLT</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\01-OneToOne\MasterAddresses.xsd">
+      <TypeName>MasterAddresses</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._01_OneToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\Lines.xsd">
+      <TypeName>Lines</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\LinesOutput.xsd">
+      <TypeName>LinesOutput</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="FlatStructureToRepeatStructure\FlatStructureToRepeatStructureMap.btm">
+      <TypeName>FlatStructureToRepeatStructureMap</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\01-OneToOne\Survays.xsd">
+      <TypeName>Survays</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._01_OneToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\01-OneToOne\OneToOneMap.btm">
+      <TypeName>OneToOneMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._01_OneToOne</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\01-OneToOne\OneToOneMapReadable.btm">
+      <TypeName>OneToOneMapReadable</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._01_OneToOne</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\02-OneToMany\Lists.xsd">
+      <TypeName>Lists</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._02_OneToMany</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\06-NestedToNested\NestedToNestedMap.btm">
+      <TypeName>NestedToNestedMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\02-OneToMany\OneToManyMap.btm">
+      <TypeName>OneToManyMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._02_OneToMany</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\02-OneToMany\OneToManyMapReadable.btm">
+      <TypeName>OneToManyMapReadable</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._02_OneToMany</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\03-ManyToOne\ProjectTender.xsd">
+      <TypeName>ProjectTender</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._03_ManyToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\03-ManyToOne\ProjectParticipant.xsd">
+      <TypeName>ProjectParticipant</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._03_ManyToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\03-ManyToOne\ManyToOneMap.btm">
+      <TypeName>ManyToOneMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._03_ManyToOne</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\04-ManyToMany\ProjectParticipant2.xsd">
+      <TypeName>ProjectParticipant2</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._04_ManyToMany</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\04-ManyToMany\ManyToManyMap.btm">
+      <TypeName>ManyToManyMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._04_ManyToMany</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\06-NestedToNested\NestedAccount.xsd">
+      <TypeName>NestedAccount</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\06-NestedToNested\CreateAccount.xsd">
+      <TypeName>CreateAccount</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\05-NestedToOne\NestedPurchaseOrder.xsd">
+      <TypeName>NestedPurchaseOrder</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._05_NestedToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\05-NestedToOne\OrderSimple.xsd">
+      <TypeName>OrderSimple</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._05_NestedToOne</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\05-NestedToOne\NestedToOneMap.btm">
+      <TypeName>NestedToOnemap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._05_NestedToOne</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\05-NestedToOne\NestedToOneMapXSLT.btm">
+      <TypeName>NestedToOneMapXSLT</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._05_NestedToOne</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\06-NestedToNested\OtherExample\Families.xsd">
+      <TypeName>Families</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="01-LoppingTypes\06-NestedToNested\OtherExample\SchoolApplicationForm.xsd">
+      <TypeName>SchoolApplicationForm</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMap.btm">
+      <TypeName>NestedFamiliesMap</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMapCorrect.btm">
+      <TypeName>NestedFamiliesMapCorrect</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="01-LoppingTypes\06-NestedToNested\OtherExample\NestedFamiliesMapOptimized.btm">
+      <TypeName>NestedFamiliesMapOptimized</TypeName>
+      <Namespace>LoopingPattern._01_LoppingTypes._06_NestedToNested.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="ConditionalLooping\ConditionalLoopingMapOrganize.btm">
+      <TypeName>ConditionalLoopingMapOrganize</TypeName>
+      <Namespace>LoopingPattern.ConditionalLooping</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\OtherExample\PersonAddressFlatStructure.xsd">
+      <TypeName>PersonAddressFlatStructure</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\OtherExample\PersonAddressRepeatingStructure.xsd">
+      <TypeName>PersonAddressRepeatingStructure</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="FlatStructureToRepeatStructure\OtherExample\AddressFlatStructureToRepeatStructureMap.btm">
+      <TypeName>AddressFlatStructureToRepeatStructureMap</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.OtherExample</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\ScopeTableFunctoid\InputScopeTableFunctoid.xsd">
+      <TypeName>InputScopeTableFunctoid</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.ScopeTableFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="FlatStructureToRepeatStructure\ScopeTableFunctoid\OutputScopeTableFunctoid.xsd">
+      <TypeName>OutputScopeTableFunctoid</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.ScopeTableFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="FlatStructureToRepeatStructure\ScopeTableFunctoid\MapScopeTableFunctoid.btm">
+      <TypeName>MapScopeTableFunctoid</TypeName>
+      <Namespace>LoopingPattern.FlatStructureToRepeatStructure.ScopeTableFunctoid</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="X1EDISample\Maps\Enrollment_to_5010_834.btm">
+      <TypeName>Enrollment_to_5010_834</TypeName>
+      <Namespace>LoopingPattern.X1EDISample.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup>
+    <Schema Include="X1EDISample\Schemas\Enrollment.xsd">
+      <TypeName>Enrollment</TypeName>
+      <Namespace>LoopingPattern.X1EDISample.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="X1EDISample\Schemas\X12_00501_834.xsd">
+      <TypeName>X12_00501_834</TypeName>
+      <Namespace>LoopingPattern.X1EDISample.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+  </ItemGroup>
+  <ItemGroup>
+    <Map Include="X1EDISample\Maps\Enrollment_to_5010_834WithXSLT.btm">
+      <TypeName>Enrollment_to_5010_834WithXSLT</TypeName>
+      <Namespace>LoopingPattern.X1EDISample.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>
