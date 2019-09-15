@@ -1,0 +1,4 @@
+C:\Development\13- CanonicalDataModelPattern\CanonicalDataModelPattern\bin\Debug\CanonicalDataModelPattern.dll
+C:\Development\13- CanonicalDataModelPattern\CanonicalDataModelPattern\bin\Debug\CanonicalDataModelPattern.pdb
+C:\Development\13- CanonicalDataModelPattern\CanonicalDataModelPattern\obj\Debug\CanonicalDataModelPattern.dll
+C:\Development\13- CanonicalDataModelPattern\CanonicalDataModelPattern\obj\Debug\CanonicalDataModelPattern.pdb

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="NoBindings" BoundEndpoints="0" TotalEndpoints="0">
+  <Timestamp>2014-06-02T15:19:01.3660063+01:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:CanonicalDataModelPattern]" Version="" Culture="" PublicKeyToken="" FullName="[Application:CanonicalDataModelPattern], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="CanonicalDataModelPattern.AddUser" RootName="AddUser" AssemblyQualifiedName="CanonicalDataModelPattern.AddUser,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="CanonicalDataModelPattern.RemoveUser" RootName="RemoveUser" AssemblyQualifiedName="CanonicalDataModelPattern.RemoveUser,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="CanonicalDataModelPattern.AddUserPlatformB" RootName="AddUserPlatformB" AssemblyQualifiedName="CanonicalDataModelPattern.AddUserPlatformB,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="CanonicalDataModelPattern.ChangeUserInfo" RootName="ChangeOrAddUserInfo" AssemblyQualifiedName="CanonicalDataModelPattern.ChangeUserInfo,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="CanonicalDataModelPattern.CanonicalRequest" RootName="CanonicalRequest" AssemblyQualifiedName="CanonicalDataModelPattern.CanonicalRequest,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="CanonicalDataModelPattern.ChangeUserPassword" RootName="ChangeUserPassword" AssemblyQualifiedName="CanonicalDataModelPattern.ChangeUserPassword,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="CanonicalDataModelPattern" Version="1.0.0.0" Culture="neutral" PublicKeyToken="b4ddcfda97575b7e" FullName="CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="SystemA" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody" Description="" />
+      <PrimaryTransport>
+        <Address>C:\BizTalkPorts\Canonical\Output\%MessageID%.xml</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;FileName vt="8"&gt;%MessageID%.xml&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2014-05-21T23:00:00</FromTime>
+        <ToTime>2014-05-22T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerSendHost" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2014-05-21T23:00:00</FromTime>
+        <ToTime>2014-05-22T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler xsi:nil="true" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.ReceivePortName" Operator="0" Value="SystemA" /&gt;
+  &lt;/Group&gt;
+  &lt;Group&gt;
+    &lt;Statement Property="BTS.ReceivePortName" Operator="0" Value="SystemB" /&gt;
+  &lt;/Group&gt;
+&lt;/Filter&gt;</Filter>
+      <Transforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>CanonicalDataModelPattern</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+  <DistributionListCollection />
+  <ReceivePortCollection>
+    <ReceivePort Name="SystemA" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="SystemA Receive Location">
+          <Description xsi:nil="true" />
+          <Address>C:\BizTalkPorts\Canonical\SystemA\*.xml</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2014-05-21T23:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2014-05-22T22:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2014-05-22T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2014-05-23T00:00:00</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;RenameReceivedFiles vt="11"&gt;0&lt;/RenameReceivedFiles&gt;&lt;RemoveReceivedFileDelay vt="19"&gt;10&lt;/RemoveReceivedFileDelay&gt;&lt;RemoveReceivedFileMaxInterval vt="19"&gt;300000&lt;/RemoveReceivedFileMaxInterval&gt;&lt;FileMask vt="8"&gt;*.xml&lt;/FileMask&gt;&lt;FileNetFailRetryInt vt="19"&gt;5&lt;/FileNetFailRetryInt&gt;&lt;RemoveReceivedFileRetryCount vt="19"&gt;5&lt;/RemoveReceivedFileRetryCount&gt;&lt;BatchSizeInBytes vt="19"&gt;102400&lt;/BatchSizeInBytes&gt;&lt;PollingInterval vt="19"&gt;60000&lt;/PollingInterval&gt;&lt;FileNetFailRetryCount vt="19"&gt;5&lt;/FileNetFailRetryCount&gt;&lt;BatchSize vt="19"&gt;20&lt;/BatchSize&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="BizTalkServerApplication" HostTrusted="false">
+            <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms>
+        <Transform FullName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.AddUserToCanonicalMap" AssemblyQualifiedName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.AddUserToCanonicalMap,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" />
+        <Transform FullName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.ChangeUserInfoToCanonicalMap" AssemblyQualifiedName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.ChangeUserInfoToCanonicalMap,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" />
+        <Transform FullName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.ChangeUserPasswordToCanonicalMap" AssemblyQualifiedName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.ChangeUserPasswordToCanonicalMap,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" />
+        <Transform FullName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.RemoveUserToCanonicalMap" AssemblyQualifiedName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.RemoveUserToCanonicalMap,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" />
+      </Transforms>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>CanonicalDataModelPattern</ApplicationName>
+    </ReceivePort>
+    <ReceivePort Name="SystemB" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <ReceiveLocations>
+        <ReceiveLocation Name="SystemB Receive Location">
+          <Description xsi:nil="true" />
+          <Address>C:\BizTalkPorts\Canonical\SystemB\*.xml</Address>
+          <PublicAddress />
+          <Primary>true</Primary>
+          <ReceiveLocationServiceWindowEnabled>false</ReceiveLocationServiceWindowEnabled>
+          <ReceiveLocationFromTime>2014-05-21T23:00:00</ReceiveLocationFromTime>
+          <ReceiveLocationToTime>2014-05-22T22:59:59</ReceiveLocationToTime>
+          <ReceiveLocationStartDateEnabled>false</ReceiveLocationStartDateEnabled>
+          <ReceiveLocationStartDate>2014-05-22T00:00:00</ReceiveLocationStartDate>
+          <ReceiveLocationEndDateEnabled>false</ReceiveLocationEndDateEnabled>
+          <ReceiveLocationEndDate>2014-05-23T00:00:00</ReceiveLocationEndDate>
+          <ReceiveLocationTransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          <ReceiveLocationTransportTypeData>&lt;CustomProps&gt;&lt;RenameReceivedFiles vt="11"&gt;0&lt;/RenameReceivedFiles&gt;&lt;RemoveReceivedFileDelay vt="19"&gt;10&lt;/RemoveReceivedFileDelay&gt;&lt;RemoveReceivedFileMaxInterval vt="19"&gt;300000&lt;/RemoveReceivedFileMaxInterval&gt;&lt;FileMask vt="8"&gt;*.xml&lt;/FileMask&gt;&lt;FileNetFailRetryInt vt="19"&gt;5&lt;/FileNetFailRetryInt&gt;&lt;RemoveReceivedFileRetryCount vt="19"&gt;5&lt;/RemoveReceivedFileRetryCount&gt;&lt;BatchSizeInBytes vt="19"&gt;102400&lt;/BatchSizeInBytes&gt;&lt;PollingInterval vt="19"&gt;60000&lt;/PollingInterval&gt;&lt;FileNetFailRetryCount vt="19"&gt;5&lt;/FileNetFailRetryCount&gt;&lt;BatchSize vt="19"&gt;20&lt;/BatchSize&gt;&lt;/CustomProps&gt;</ReceiveLocationTransportTypeData>
+          <ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="1" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody" Description="" />
+          <ReceivePipelineData xsi:nil="true" />
+          <SendPipeline xsi:nil="true" />
+          <SendPipelineData xsi:nil="true" />
+          <Enable>true</Enable>
+          <ReceiveHandler Name="BizTalkServerApplication" HostTrusted="false">
+            <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+          </ReceiveHandler>
+        </ReceiveLocation>
+      </ReceiveLocations>
+      <SendPipelineData xsi:nil="true" />
+      <Authentication>0</Authentication>
+      <Tracking>0</Tracking>
+      <Transforms>
+        <Transform FullName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.AddUserPlatformBToCanonicalMap" AssemblyQualifiedName="CanonicalDataModelPattern._01_Solution.ServiceSchemasToCanonical.AddUserPlatformBToCanonicalMap,CanonicalDataModelPattern, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b4ddcfda97575b7e" />
+      </Transforms>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>CanonicalDataModelPattern</ApplicationName>
+    </ReceivePort>
+  </ReceivePortCollection>
+  <PartyCollection xsi:nil="true" />
+</BindingInfo>

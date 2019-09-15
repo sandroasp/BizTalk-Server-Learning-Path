@@ -2,8 +2,12 @@
 
 ## Mapping Patterns
 
-### Muenchian Grouping and Sorting in BizTalk Maps without losing Map functionalities
-Project explaining how to use Muenchian Method to handle grouping and sorting in BizTalk Maps without losing Map functionalities. The Muenchian Method is a method developed by Steve Muench for performing grouping and sorting functionalities in a more efficient way using keys.
+### BizTalk Mapper Patterns: Canonical Data Model Pattern
+When several applications need to work together through Messaging and each application has its own internal data format, most of the times semantically equivalent, we sometimes want or need to minimize all these dependencies and implement an additional mechanism of indirection between the data formats for each individual application.
+
+In an Enterprise application integration (EAI) scenario it is quite common for an enterprise to receive messages from different systems that may have the same meaning but follow different formats but were developed independently based on incompatible or different data models, yet they must share information efficiently and accurately in order to effectively support the business. Different systems can have different terms for the same concept, leading to miscommunication and errors of interpretation (i.e. a bundle product can be named also as a pack product or a compose product). Canonical Data Modeling is a technique for developing and maintaining a logical model of the data required to support the needs of the business for a subject area and it is intended to reduce costs and standardize on agreed data definitions associated with integrating business systems.
+
+The Canonical Data Model (CMD) will ensure loose coupling between applications, and if a new application is added to the integration solution, the only transformation between the Canonical Data Model need to be created, independent of the number of applications that already participate.
 
 ## Working with Functoids
 
@@ -38,6 +42,9 @@ in this sample we will address this issue and how can you handle.
 Basically, there are two properties inside the schema element decides whether an element can be absent from the document: Min Occurs and Nillable.
 
 In this sample scenario, we will have 2 mandatory elements that can be nillable that we need to map to the destination schema. In this scenario, all the destination elements are also mandatory and we need to fill them with a valid value or specify the nillable property as true: so if the element exists we need to map the correct source value otherwise we need to set the destination element as nillable.
+
+### Muenchian Grouping and Sorting in BizTalk Maps without losing Map functionalities
+Project explaining how to use Muenchian Method to handle grouping and sorting in BizTalk Maps without losing Map functionalities. The Muenchian Method is a method developed by Steve Muench for performing grouping and sorting functionalities in a more efficient way using keys.
 
 ## Advance Properties
 
