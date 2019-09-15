@@ -1,0 +1,34 @@
+﻿<GetPIArchiveDataResult>
+<TimeSeries type="TimeSeriesUpdates" Path="3" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues><TimedValue Path="3" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">4458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+<TimeSeries type="TimeSeriesUpdates" Path="4" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues><TimedValue Path="4" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">5458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+<TimeSeries type="TimeSeriesUpdates" Path="5" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues>
+<TimedValue Path="5" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">2458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+<TimeSeries type="TimeSeriesUpdates" Path="6" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues>
+<TimedValue Path="6" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">3458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+<TimeSeries type="TimeSeriesUpdates" Path="7" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues><TimedValue Path="7" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">4458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+<TimeSeries type="TimeSeriesUpdates" Path="8" ErrDesc="" Error="-2147220478" SeriesID="">
+<TimedValues><TimedValue Path="8" Flags="Flags_1" Time="1999-05-31T13:20:00.000-05:00" UOM="UOM_3" Status="Status_4" PctGood="10" DataType="DataType_6">5458.25</TimedValue>
+</TimedValues>
+<Updates></Updates>
+</TimeSeries>
+</GetPIArchiveDataResult>

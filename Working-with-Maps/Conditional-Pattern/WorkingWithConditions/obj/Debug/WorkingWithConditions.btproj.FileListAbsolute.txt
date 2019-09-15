@@ -1,0 +1,4 @@
+C:\Development\06 - WorkingWithConditions\WorkingWithConditions\bin\Debug\WorkingWithConditions.dll
+C:\Development\06 - WorkingWithConditions\WorkingWithConditions\bin\Debug\WorkingWithConditions.pdb
+C:\Development\06 - WorkingWithConditions\WorkingWithConditions\obj\Debug\WorkingWithConditions.dll
+C:\Development\06 - WorkingWithConditions\WorkingWithConditions\obj\Debug\WorkingWithConditions.pdb

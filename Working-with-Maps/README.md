@@ -12,6 +12,11 @@ The Canonical Data Model (CMD) will ensure loose coupling between applications, 
 ### BizTalk Mapper Patterns: Looping Pattern
 When exchanging messages in an Enterprise application integration (EAI) or Business-to-Business (B2B) some scenarios need to deal with more complicated types of data manipulation can only reasonably be done using recurring records or elements (type of arrays in XML documents). These two types are extremely useful when manipulating large number of data. And a combination of this of Arrays and Loop operations can save you incredible amounts of time when performing certain types of repetitive transformations.
 
+### BizTalk Mapper Patterns: Conditional Pattern
+When exchanging messages in an Enterprise Application Integration (EAI) or Business-to-Business (B2B) scenario it is quite common the need to retrieve only the portion of data from the message by some filter or under a specific condition based on some criteria. This way we need to be able to apply Conditional Mapping technics.
+
+Conditional mapping is a fixed condition that helps us to filter the result set that is being mapped from the source message.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
