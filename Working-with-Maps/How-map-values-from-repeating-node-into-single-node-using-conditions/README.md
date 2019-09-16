@@ -37,28 +37,28 @@ To accomplish this, we need to:
   * In the scripting type select “Inline XSLT” option
   * In the Inline script put the following code:
     
-    <xsl:for-each select="TimeSeries"> 
-         <xsl:if test="string(@Path) = '1' "> 
-            <Quantity> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </Quantity> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '2' "> 
-            <NRJQuantity> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </NRJQuantity> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '3' "> 
-            <AvgCal> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </AvgCal> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '4' "> 
-            <AvgDens> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </AvgDens> 
-        </xsl:if> 
-    </xsl:for-each> 
+    <xsl:for-each select="TimeSeries">
+	<xsl:if test="string(@Path) = '1' ">
+		<Quantity>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</Quantity>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '2' ">
+		<NRJQuantity>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</NRJQuantity>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '3' ">
+		<AvgCal>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</AvgCal>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '4' ">
+		<AvgDens>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</AvgDens>
+	</xsl:if>
+    </xsl:for-each>
     
 
 * Finally drag a link from the Scripting functoid to one element in the destination schema, for example “NRJQuantity”
@@ -75,35 +75,34 @@ To accomplish this, we need to:
 * Replace the code of the Scripting functoid, existing in the previous solution, by:
     
     <xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='1']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='1']) gt 0"> 
 		<Quantity> 
 		  <xsl:value-of select="//TimeSeries[@Path='1']/TimedValues/TimedValue/text()" /> 
 		</Quantity> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='2']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='2']) gt 0"> 
 		<NRJQuantity> 
 		  <xsl:value-of select="//TimeSeries[@Path='2']/TimedValues/TimedValue/text()" /> 
 		</NRJQuantity> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='3']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='3']) gt 0"> 
 		<AvgCal> 
 		  <xsl:value-of select="//TimeSeries[@Path='3']/TimedValues/TimedValue/text()" /> 
 		</AvgCal> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='4']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='4']) gt 0"> 
 		<AvgDens> 
 		  <xsl:value-of select="//TimeSeries[@Path='4']/TimedValues/TimedValue/text()" /> 
 		</AvgDens> 
 	  </xsl:when> 
     </xsl:choose>
     
-	
 Limitations of this approach:
 * Because we use scripting functoids we cannot **read** the entire map visually. We need to open the functoids and read, mainly, the XSLT code.
 * Need **basic knowledge of XSLT and XPath**
