@@ -1,0 +1,148 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="1b5536ba-1461-48c5-a5bb-7c073ba70182" LowerBound="1.1" HigherBound="33.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="CallExternalOrchestrationMainSolution" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="94ee5a0f-ba49-40a2-b883-c00287dbaaf7" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="6988c835-9cbc-4494-b55e-b7a70e64f52c" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveRequest" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="b2923d9f-33e9-4ec2-8243-9232bca6a341" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.24">
+                    <om:Property Name="Ref" Value="CallExternalOrchestrationMainSolution.InputSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="805d3c95-2e8d-42cc-a0db-e7c2b06389de" ParentLink="Module_ServiceDeclaration" LowerBound="11.1" HigherBound="32.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MainOrchestration" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="5e7947e5-a15f-4fcb-9cbe-338c0ca2c982" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="17.1" HigherBound="18.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varParm1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="5eaf4c1c-29b7-4fc8-8203-8efe8731ae2d" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="18.1" HigherBound="19.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varParm2" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="c8fdff69-6ff3-463b-804d-7c6f39f5da25" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="16.1" HigherBound="17.1">
+                <om:Property Name="Type" Value="CallExternalOrchestrationMainSolution.InputSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="c82fe5ca-22d7-41dc-974a-0ae24fac61d3" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="6e9a613d-e8b9-4d7d-8d41-dacc71f612b3" ParentLink="ServiceBody_Statement" LowerBound="21.1" HigherBound="25.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceivePort" />
+                    <om:Property Name="MessageName" Value="msgInput" />
+                    <om:Property Name="OperationName" Value="ReceiveRequest" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ReceiveRequest" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="38747ae7-a449-4362-adbc-a3cbc0193830" ParentLink="ServiceBody_Statement" LowerBound="25.1" HigherBound="28.1">
+                    <om:Property Name="Expression" Value="varParm1 = msgInput.Param1;&#xD;&#xA;varParm2 = msgInput.Param2;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Set variables Expr" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Call" OID="4d423394-3154-4914-b7fc-38dcce8f046a" ParentLink="ServiceBody_Statement" LowerBound="28.1" HigherBound="30.1">
+                    <om:Property Name="Identifier" Value="CallOrchestration_1" />
+                    <om:Property Name="Invokee" Value="CallExternalOrchestrationCommonSolution.OrchestrationToBeCalled" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="CallOrchestration_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Parameter" OID="a038e595-ddb7-4288-a0a9-1e09de7e4f98" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="varParm1" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Parameter" OID="9670b0e2-455a-454e-803c-53687db5694c" ParentLink="InvokeStatement_Parameter">
+                        <om:Property Name="Direction" Value="In" />
+                        <om:Property Name="Name" Value="varParm1" />
+                        <om:Property Name="Type" Value="System.String" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="05ff454e-3de7-4259-90dc-5d99a5454469" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="14.1" HigherBound="16.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="CallExternalOrchestrationMainSolution.ReceiveType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceivePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8691f068-9671-4bc8-a3fb-e14a7e78da6e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="14.1" HigherBound="15.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module CallExternalOrchestrationMainSolution
+{
+    public porttype ReceiveType
+    {
+        oneway ReceiveRequest
+        {
+            InputSchema
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MainOrchestration
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveType ReceivePort;
+        message InputSchema msgInput;
+        System.String varParm1;
+        System.String varParm2;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6e9a613d-e8b9-4d7d-8d41-dacc71f612b3")]
+            activate receive (ReceivePort.ReceiveRequest, msgInput);
+            varParm1 = "";
+            varParm2 = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("38747ae7-a449-4362-adbc-a3cbc0193830")]
+            varParm1 = msgInput.Param1;
+            varParm2 = msgInput.Param2;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4d423394-3154-4914-b7fc-38dcce8f046a")]
+            call CallExternalOrchestrationCommonSolution.OrchestrationToBeCalled (varParm1, varParm1);
+        }
+    }
+}
+

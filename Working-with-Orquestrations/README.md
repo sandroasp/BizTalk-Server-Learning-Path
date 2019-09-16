@@ -8,6 +8,9 @@ Project explaining how to accessing and change message values inside orchestrati
 ## How to call a SQL Stored procedure without inputs
 In this proof-of-concept (PoC) we will have a simple SQL Server table called Codes that only contains a code identifier that is unique in the system, as you can see picture bellow and, once again, we will try to call a stored procedure that gets all the existing codes.
 
+## How to Call Orchestrations developed in a different Visual Studio Solution
+In this proof-of-concept (PoC) we will have a simple SQL Server table called Codes that only contains a code identifier that is unique in the system, as you can see picture bellow and, once again, we will try to call a stored procedure that gets all the existing codes.
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 
