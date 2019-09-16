@@ -30,7 +30,7 @@ The best solution is to use the same technic explain in the previous demo: (BizT
 ![How to Access Orchestration Variables from Maps](media/Content-Enricher-Pattern-2.PNG)
 
 # Read more about it
-You can read more about this topic here: [BizTalk Mapper: Working With Nillable Values (xsi:nil=”true”)](https://blog.sandro-pereira.com/2014/06/12/biztalk-mapper-working-with-nillable-values-xsiniltrue/)
+You can read more about this topic here: [BizTalk Mapping Patterns and Best Practices book [Free] released](https://blog.sandro-pereira.com/2014/09/28/biztalk-mapping-patterns-and-best-practices-book-free-released/)
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
