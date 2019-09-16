@@ -9,8 +9,6 @@ BizTalk Mapper provides you with just-in-time assistance, through a shortcut men
   * Or Record, elements or field names must match;
 * You can manually create single links by dragging and dropping the source element to the destination element, if the destination schema don’t have a similar structures or the same names
 
-![TreatElementsAsRecords attribute](media/BizTalk-Mapper-TreatElementsAsRecords-attribute.png)
-
 # Building the PurcharseOder Sample
 This demo will provide with 3 small samples for you to understand the differences of the last 3 options (Link by Structure, Link By Name, Mass Copy) that will be descrived below.
 
