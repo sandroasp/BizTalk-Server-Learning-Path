@@ -12,7 +12,9 @@ In this proof-of-concept (PoC) we will have a simple SQL Server table called Cod
 Project explaining how to call Orchestration from another project or from another BizTalk Application.
 
 ## How to Call Orchestrations developed in a different Visual Studio Solution
-In this proof-of-concept (PoC) we will have a simple SQL Server table called Codes that only contains a code identifier that is unique in the system, as you can see picture bellow and, once again, we will try to call a stored procedure that gets all the existing codes.
+In the past, I developed a demo on “How to Call Orchestration from another project or from another BizTalk Application” that you can read here and download the source code from Code Gallery here.
+
+However, there were a few questions about how we can accomplish that using two different solutions… well is the exact same process, but to help clarify this topic and to better help the community members that placed the questions I decide to create a different demo.
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
