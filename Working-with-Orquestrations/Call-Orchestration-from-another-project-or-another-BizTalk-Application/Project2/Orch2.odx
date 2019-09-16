@@ -1,0 +1,52 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="9436d832-c877-4364-bbf3-1ce9797e361d" LowerBound="1.1" HigherBound="16.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="Project2" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="9d3281ba-cb70-40d5-a035-3b01fd676057" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="15.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="Orch2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="8e2fb37e-fb76-42c2-b17a-2c380caad05b" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.String" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="var1" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="cbce87fd-2b79-416a-934b-5d4cee3c60ee" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="VariableAssignment" OID="9c74b3ed-98bb-4c28-bf2a-874ef5853908" ParentLink="ServiceBody_Statement" LowerBound="11.1" HigherBound="13.1">
+                    <om:Property Name="Expression" Value="var1 = &quot;do something&quot;;" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Expression_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module Project2
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    public service Orch2
+    {
+        System.String var1;
+        body ()
+        {
+            var1 = "";
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9c74b3ed-98bb-4c28-bf2a-874ef5853908")]
+            var1 = "do something";
+        }
+    }
+}
+

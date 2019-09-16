@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project1", "Project1\Project1.btproj", "{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project2", "Project2\Project2.btproj", "{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|Any CPU = Deployment|Any CPU
+		Development|Any CPU = Development|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}.Deployment|Any CPU.ActiveCfg = Deployment|Any CPU
+		{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}.Deployment|Any CPU.Build.0 = Deployment|Any CPU
+		{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}.Deployment|Any CPU.Deploy.0 = Deployment|Any CPU
+		{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{8FD18F02-A7A9-4EF8-9A87-650701EEEF42}.Development|Any CPU.Build.0 = Development|Any CPU
+		{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}.Deployment|Any CPU.ActiveCfg = Deployment|Any CPU
+		{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}.Deployment|Any CPU.Build.0 = Deployment|Any CPU
+		{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}.Deployment|Any CPU.Deploy.0 = Deployment|Any CPU
+		{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{2C4432E7-52E6-4AF1-9257-E4ACE30DD860}.Development|Any CPU.Build.0 = Development|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

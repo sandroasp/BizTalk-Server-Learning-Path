@@ -1,0 +1,4 @@
+C:\Development\CallExternalOrchestration\Project2\bin\Deployment\Project2.dll
+C:\Development\CallExternalOrchestration\Project2\bin\Deployment\Project2.pdb
+C:\Development\CallExternalOrchestration\Project2\obj\Deployment\Project2.dll
+C:\Development\CallExternalOrchestration\Project2\obj\Deployment\Project2.pdb
