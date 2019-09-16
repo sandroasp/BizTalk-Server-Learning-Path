@@ -1,0 +1,269 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="155acaee-25ae-4b5a-94a4-b3a28abf55a9" LowerBound="1.1" HigherBound="54.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="MappingWorkingWithMultipleOutputMessages" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="8aa2cd84-4923-44a0-b87f-f11c9b0d9cc6" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="CustomerOrderType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="cc3d6d8f-d571-4097-bae9-d676ad72a39d" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveOrder" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="cf030515-fe14-45c2-a7cd-290e75702059" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.26">
+                    <om:Property Name="Ref" Value="MappingWorkingWithMultipleOutputMessages.CustomerOrder" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="73485af2-ebb3-4a8b-a52f-fed47fecac3f" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendSAPOrderType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="e0daf957-7ee7-4f9b-b286-551e57a4bbf0" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSAPOrder" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="dea5867f-d7b2-4502-975f-cbd708bf1b1f" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.21">
+                    <om:Property Name="Ref" Value="MappingWorkingWithMultipleOutputMessages.SAPOrder" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="ad685aa5-1965-45ce-b43c-303ca31cd92f" ParentLink="Module_PortType" LowerBound="18.1" HigherBound="25.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendCRMOrderType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2f1fab9e-b794-4db6-b4be-ece08da94a2d" ParentLink="PortType_OperationDeclaration" LowerBound="20.1" HigherBound="24.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendCRMOrder" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="6112d7d1-9aab-495f-8eeb-e2be82e59083" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="22.13" HigherBound="22.21">
+                    <om:Property Name="Ref" Value="MappingWorkingWithMultipleOutputMessages.CRMOrder" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="f39d1c5e-9a67-40a1-9863-89db182b3374" ParentLink="Module_ServiceDeclaration" LowerBound="25.1" HigherBound="53.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="MappingOneToMany" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="cd49f509-c651-42cf-bc23-17b0a5c5cae2" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="41c9b19c-b54d-41e0-8495-bb5f967b5172" ParentLink="ServiceBody_Statement" LowerBound="39.1" HigherBound="41.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="CustomerOrderPort" />
+                    <om:Property Name="MessageName" Value="msgCustomerOrder" />
+                    <om:Property Name="OperationName" Value="ReceiveOrder" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Customer Order" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="a2a91609-c0b3-455b-a36b-d4332cae9f8c" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="47.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SAP and Order Msg Const" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="6129ce9b-3ee1-4af8-a1ae-8b73d0eb13e8" ParentLink="ComplexStatement_Statement" LowerBound="44.1" HigherBound="46.1">
+                        <om:Property Name="ClassName" Value="MappingWorkingWithMultipleOutputMessages.TransformOneToManyOrders" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="TransformCustomOrderToSAPAndCRMOrder" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="79bbfa6a-ef10-4889-a88c-cfe39a76a8fb" ParentLink="Transform_InputMessagePartRef" LowerBound="45.123" HigherBound="45.139">
+                            <om:Property Name="MessageRef" Value="msgCustomerOrder" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="e07a5292-ee59-4074-99ca-ffe7ef9b95ab" ParentLink="Transform_OutputMessagePartRef" LowerBound="45.28" HigherBound="45.39">
+                            <om:Property Name="MessageRef" Value="msgCRMOrder" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="af51f39a-c104-4367-bcca-ed3b53366ca0" ParentLink="Transform_OutputMessagePartRef" LowerBound="45.41" HigherBound="45.52">
+                            <om:Property Name="MessageRef" Value="msgSAPOrder" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="45dfb17c-a7da-4e81-a065-b7fe8a2ccd77" ParentLink="Construct_MessageRef" LowerBound="42.23" HigherBound="42.34">
+                        <om:Property Name="Ref" Value="msgSAPOrder" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="73b4c98b-7104-4c71-90b4-cd757e11611e" ParentLink="Construct_MessageRef" LowerBound="42.36" HigherBound="42.47">
+                        <om:Property Name="Ref" Value="msgCRMOrder" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="f581cb38-1c31-4b76-a8d7-600c00c6ae8f" ParentLink="ServiceBody_Statement" LowerBound="47.1" HigherBound="49.1">
+                    <om:Property Name="PortName" Value="SendSAPOrderPort" />
+                    <om:Property Name="MessageName" Value="msgSAPOrder" />
+                    <om:Property Name="OperationName" Value="SendSAPOrder" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send SAP Order" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Send" OID="451b940a-5744-4b83-a08c-c5bede67e11c" ParentLink="ServiceBody_Statement" LowerBound="49.1" HigherBound="51.1">
+                    <om:Property Name="PortName" Value="SendCRMOrderPort" />
+                    <om:Property Name="MessageName" Value="msgCRMOrder" />
+                    <om:Property Name="OperationName" Value="SendCRMOrder" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send CRM Order" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3767581a-5ca3-46f9-b7a0-d0dc7f3f5f9c" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="28.1" HigherBound="30.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.CustomerOrderType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CustomerOrderPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="c53bb1e7-03c7-49ec-8d2c-be6209d9dfe9" ParentLink="PortDeclaration_CLRAttribute" LowerBound="28.1" HigherBound="29.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="7b938161-b5fd-4a1b-8487-a762cc885161" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="30.1" HigherBound="32.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="16" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.SendSAPOrderType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendSAPOrderPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="524bc62a-ca74-4552-b0eb-1022cc6b7260" ParentLink="PortDeclaration_CLRAttribute" LowerBound="30.1" HigherBound="31.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0d6889ab-29d5-4643-a9e0-583cbe972438" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="32.1" HigherBound="34.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="18" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.SendCRMOrderType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendCRMOrderPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6d9c2b7b-5746-408c-80bc-cfcba605c47a" ParentLink="PortDeclaration_CLRAttribute" LowerBound="32.1" HigherBound="33.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="1c42afe7-31bc-4830-8ead-d3080262c76b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="34.1" HigherBound="35.1">
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.CustomerOrder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgCustomerOrder" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="e169c936-b363-45b8-8de1-343d86b4eefd" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="35.1" HigherBound="36.1">
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.CRMOrder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgCRMOrder" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="0c1f5f1f-5215-4241-aed5-b80abd241c5b" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="36.1" HigherBound="37.1">
+                <om:Property Name="Type" Value="MappingWorkingWithMultipleOutputMessages.SAPOrder" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgSAPOrder" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module MappingWorkingWithMultipleOutputMessages
+{
+    public porttype CustomerOrderType
+    {
+        oneway ReceiveOrder
+        {
+            CustomerOrder
+        };
+    };
+    public porttype SendSAPOrderType
+    {
+        oneway SendSAPOrder
+        {
+            SAPOrder
+        };
+    };
+    public porttype SendCRMOrderType
+    {
+        oneway SendCRMOrder
+        {
+            CRMOrder
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MappingOneToMany
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements CustomerOrderType CustomerOrderPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendSAPOrderType SendSAPOrderPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendCRMOrderType SendCRMOrderPort;
+        message CustomerOrder msgCustomerOrder;
+        message CRMOrder msgCRMOrder;
+        message SAPOrder msgSAPOrder;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("41c9b19c-b54d-41e0-8495-bb5f967b5172")]
+            activate receive (CustomerOrderPort.ReceiveOrder, msgCustomerOrder);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a2a91609-c0b3-455b-a36b-d4332cae9f8c")]
+            construct msgSAPOrder, msgCRMOrder
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("6129ce9b-3ee1-4af8-a1ae-8b73d0eb13e8")]
+                transform (msgCRMOrder, msgSAPOrder) = MappingWorkingWithMultipleOutputMessages.TransformOneToManyOrders (msgCustomerOrder);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("f581cb38-1c31-4b76-a8d7-600c00c6ae8f")]
+            send (SendSAPOrderPort.SendSAPOrder, msgSAPOrder);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("451b940a-5744-4b83-a08c-c5bede67e11c")]
+            send (SendCRMOrderPort.SendCRMOrder, msgCRMOrder);
+        }
+    }
+}
+

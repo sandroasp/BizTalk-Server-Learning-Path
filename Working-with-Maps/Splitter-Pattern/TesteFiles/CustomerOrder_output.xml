@@ -1,0 +1,24 @@
+﻿<ns0:CustomerOrder xmlns:ns0="http://MappingWorkingWithMultipleOutputMessages.CustomerOrder">
+  <OrderHeader>
+    <OrderDate>2013-08-23T15:33:20</OrderDate>
+    <EstimatedDeliveryDate>2013-08-30T09:33:20</EstimatedDeliveryDate>
+    <OrderNumber>1</OrderNumber>
+  </OrderHeader>
+  <CustomerDetails>
+    <Name>Sandro Pereira</Name>
+    <Address>Portugal</Address>
+    <Id>10</Id>
+  </CustomerDetails>
+  <OrderDetails>
+    <ItemDescription>BizTalk Mapper Patterns</ItemDescription>
+    <ItemCustomerCode>BTS2013LAB</ItemCustomerCode>
+    <TotalAmount>5</TotalAmount>
+    <UnitType>BTS</UnitType>
+  </OrderDetails>
+  <OrderDetails>
+    <ItemDescription>BizTalk Developer</ItemDescription>
+    <ItemCustomerCode>BTS2013LAB</ItemCustomerCode>
+    <TotalAmount>1</TotalAmount>
+    <UnitType>BTS</UnitType>
+  </OrderDetails>
+</ns0:CustomerOrder>

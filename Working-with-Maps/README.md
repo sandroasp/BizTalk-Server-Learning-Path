@@ -29,6 +29,11 @@ Here we will remove unimportant data items from a message, sometimes also based 
 
 The Content Filter does not necessarily just remove data elements and sometimes can also be used to simplify the structure of the message.
 
+### BizTalk Mapper Patterns: Splitter Pattern
+This can also be treated has Working With Multiple Output Messages or Splitting Messages
+
+This is a common integration problem you might come across is the need to integrate information coming from a system into several system that may require different information or less information over what is sent. So we basically want to split the original information into two different formats to be sent to our internal systems.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
