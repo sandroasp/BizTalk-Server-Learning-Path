@@ -103,7 +103,6 @@ To accomplish this, we need to:
 	  </xsl:when> 
     </xsl:choose>
     
-	
 Limitations of this approach:
 * Because we use scripting functoids we cannot **read** the entire map visually. We need to open the functoids and read, mainly, the XSLT code.
 * Need **basic knowledge of XSLT and XPath**
