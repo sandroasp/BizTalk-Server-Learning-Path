@@ -1,4 +1,4 @@
-# BizTalk Server: How to call a SQL Stored procedure without inputs
+# How to Call Orchestrations developed in a different Visual Studio Solution
 
 # Introduction
 In the past, I developed a demo on [How to Call Orchestration from another project or from another BizTalk Application](https://blog.sandro-pereira.com/2009/07/24/biztalk-orchestration-call-orchestration-from-another-project-or-from-another-biztalk-application/) that you can read here and download the source code.
