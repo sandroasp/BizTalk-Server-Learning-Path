@@ -34,6 +34,11 @@ This can also be treated has Working With Multiple Output Messages or Splitting 
 
 This is a common integration problem you might come across is the need to integrate information coming from a system into several system that may require different information or less information over what is sent. So we basically want to split the original information into two different formats to be sent to our internal systems.
 
+### BizTalk Mapper Patterns: Content Enricher Pattern
+This can also be treated has Working with Multiple input messages or joining messages.
+
+When sending messages from one system to another it is common for the target system to require more information than the source system can provide so we will need to gather information from different sources, his is also known as Scatter-Gather Pattern. This is a common behavior that we all certainly come across in orchestrations.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
@@ -83,6 +88,11 @@ This demo will provide with 3 small samples for you to understand the difference
 Sometimes we would like to use constant values within a BizTalk map to suppress certain lack of “static” information in the source message which are required in the final message or to supply in elements that don’t change (or rarely change), such as a billing address or a company name.
 
 The best use of constant mapping depends on the situation and requirements you are developing against.
+
+### How to Access Orchestration Variables from Maps
+Basically this can be another example of Content Enricher Pattern or you may need to pass orchestration variables into the map to make some transformation logic.
+
+The question is how can we easily access orchestration variables from the maps?
 
 ## Advance Properties
 

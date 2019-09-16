@@ -1,0 +1,7 @@
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\bin\Debug\OrchVarRetrieverFunctoid.dll
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\bin\Debug\OrchVarRetrieverFunctoid.pdb
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\obj\Debug\OrchVarRetrieverFunctoid.Resources.resources
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\obj\Debug\OrchVarRetrieverFunctoid.csproj.GenerateResource.Cache
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\obj\Debug\OrchVarRetrieverFunctoid.dll
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\obj\Debug\OrchVarRetrieverFunctoid.pdb
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\OrchVarRetrieverFunctoid\obj\Debug\OrchVarRetrieverFunctoid.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\StoreValuesHelperClass\bin\Debug\StoreValuesHelperClass.dll
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\StoreValuesHelperClass\bin\Debug\StoreValuesHelperClass.pdb
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\StoreValuesHelperClass\obj\Debug\StoreValuesHelperClass.dll
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\StoreValuesHelperClass\obj\Debug\StoreValuesHelperClass.pdb
+C:\Development\03- HowToSendOrchestrationVariablesIntoMaps\StoreValuesHelperClass\obj\Debug\StoreValuesHelperClass.csprojResolveAssemblyReference.cache

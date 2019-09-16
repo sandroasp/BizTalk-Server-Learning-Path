@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToSendOrchestrationVariablesIntoMaps", "HowToSendOrchestrationVariablesIntoMaps\HowToSendOrchestrationVariablesIntoMaps.btproj", "{FFAAF3BC-79D6-4A3D-8BA4-833239177746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchVarRetrieverFunctoid", "OrchVarRetrieverFunctoid\OrchVarRetrieverFunctoid.csproj", "{89BA76EE-9B1A-4787-A495-6520D78CFFA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreValuesHelperClass", "StoreValuesHelperClass\StoreValuesHelperClass.csproj", "{4FC92257-9AB9-404A-AECE-50F1B37BDA03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFAAF3BC-79D6-4A3D-8BA4-833239177746}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{89BA76EE-9B1A-4787-A495-6520D78CFFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BA76EE-9B1A-4787-A495-6520D78CFFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BA76EE-9B1A-4787-A495-6520D78CFFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BA76EE-9B1A-4787-A495-6520D78CFFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC92257-9AB9-404A-AECE-50F1B37BDA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC92257-9AB9-404A-AECE-50F1B37BDA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC92257-9AB9-404A-AECE-50F1B37BDA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC92257-9AB9-404A-AECE-50F1B37BDA03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
