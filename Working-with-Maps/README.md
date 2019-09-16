@@ -39,6 +39,9 @@ This can also be treated has Working with Multiple input messages or joining mes
 
 When sending messages from one system to another it is common for the target system to require more information than the source system can provide so we will need to gather information from different sources, his is also known as Scatter-Gather Pattern. This is a common behavior that we all certainly come across in orchestrations.
 
+### BizTalk Mapper Patterns: Name-Value Transformation Pattern - How to Map Name Value Pair to a Hierarchical Schema
+In this new mapping pattern, I want to show you how can you transform a Name/Value Pair record into a hierarchical schema.
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids

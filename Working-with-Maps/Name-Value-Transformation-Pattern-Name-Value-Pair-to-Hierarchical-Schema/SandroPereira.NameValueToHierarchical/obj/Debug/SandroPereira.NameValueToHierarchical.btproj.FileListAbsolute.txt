@@ -1,0 +1,4 @@
+C:\Development\SandroPereira.NameValueToHierarchical\SandroPereira.NameValueToHierarchical\bin\Debug\SandroPereira.NameValueToHierarchical.dll
+C:\Development\SandroPereira.NameValueToHierarchical\SandroPereira.NameValueToHierarchical\bin\Debug\SandroPereira.NameValueToHierarchical.pdb
+C:\Development\SandroPereira.NameValueToHierarchical\SandroPereira.NameValueToHierarchical\obj\Debug\SandroPereira.NameValueToHierarchical.dll
+C:\Development\SandroPereira.NameValueToHierarchical\SandroPereira.NameValueToHierarchical\obj\Debug\SandroPereira.NameValueToHierarchical.pdb
