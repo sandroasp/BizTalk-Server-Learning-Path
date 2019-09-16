@@ -37,28 +37,28 @@ To accomplish this, we need to:
   * In the scripting type select “Inline XSLT” option
   * In the Inline script put the following code:
     
-    <xsl:for-each select="TimeSeries"> 
-         <xsl:if test="string(@Path) = '1' "> 
-            <Quantity> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </Quantity> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '2' "> 
-            <NRJQuantity> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </NRJQuantity> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '3' "> 
-            <AvgCal> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </AvgCal> 
-        </xsl:if> 
-        <xsl:if test="string(@Path) = '4' "> 
-            <AvgDens> 
-              <xsl:value-of select="TimedValues/TimedValue/text()" /> 
-            </AvgDens> 
-        </xsl:if> 
-    </xsl:for-each> 
+    <xsl:for-each select="TimeSeries">
+	<xsl:if test="string(@Path) = '1' ">
+		<Quantity>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</Quantity>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '2' ">
+		<NRJQuantity>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</NRJQuantity>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '3' ">
+		<AvgCal>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</AvgCal>
+	</xsl:if>
+	<xsl:if test="string(@Path) = '4' ">
+		<AvgDens>
+			<xsl:value-of select="TimedValues/TimedValue/text()" />
+		</AvgDens>
+	</xsl:if>
+    </xsl:for-each>
     
 
 * Finally drag a link from the Scripting functoid to one element in the destination schema, for example “NRJQuantity”
