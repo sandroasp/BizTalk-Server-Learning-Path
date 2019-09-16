@@ -79,6 +79,11 @@ The real secret is to find the best of both worlds: BizTalk Mapper and custom XS
 ### Automatically Link The Record Elements By Structure, Name or Using Mass Copy
 This demo will provide with 3 small samples for you to understand the differences of the last 3 options (Link by Structure, Link By Name, Mass Copy).
 
+### Working with Constant Values inside maps
+Sometimes we would like to use constant values within a BizTalk map to suppress certain lack of “static” information in the source message which are required in the final message or to supply in elements that don’t change (or rarely change), such as a billing address or a company name.
+
+The best use of constant mapping depends on the situation and requirements you are developing against.
+
 ## Advance Properties
 
 ### BizTalk Mapper: Omit XML Declaration (Grid Property) explained

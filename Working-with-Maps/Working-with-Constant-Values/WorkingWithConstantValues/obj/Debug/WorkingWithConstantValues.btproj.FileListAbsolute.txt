@@ -1,0 +1,8 @@
+c:\development\WorkingWithConstantValues\WorkingWithConstantValues\bin\Debug\WorkingWithConstantValues.dll
+c:\development\WorkingWithConstantValues\WorkingWithConstantValues\bin\Debug\WorkingWithConstantValues.pdb
+c:\development\WorkingWithConstantValues\WorkingWithConstantValues\obj\Debug\WorkingWithConstantValues.dll
+c:\development\WorkingWithConstantValues\WorkingWithConstantValues\obj\Debug\WorkingWithConstantValues.pdb
+C:\Development\04- WorkingWithConstantValues\WorkingWithConstantValues\bin\Debug\WorkingWithConstantValues.dll
+C:\Development\04- WorkingWithConstantValues\WorkingWithConstantValues\bin\Debug\WorkingWithConstantValues.pdb
+C:\Development\04- WorkingWithConstantValues\WorkingWithConstantValues\obj\Debug\WorkingWithConstantValues.dll
+C:\Development\04- WorkingWithConstantValues\WorkingWithConstantValues\obj\Debug\WorkingWithConstantValues.pdb
