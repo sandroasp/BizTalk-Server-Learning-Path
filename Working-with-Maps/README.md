@@ -66,6 +66,11 @@ In this sample scenario, we will have 2 mandatory elements that can be nillable 
 ### Muenchian Grouping and Sorting in BizTalk Maps without losing Map functionalities
 Project explaining how to use Muenchian Method to handle grouping and sorting in BizTalk Maps without losing Map functionalities. The Muenchian Method is a method developed by Steve Muench for performing grouping and sorting functionalities in a more efficient way using keys.
 
+### BizTalk Mapper: External Custom XSLT file vs BizTalk Mapper (Best Practices)
+You may argument that XSLT automatically generated code by the BizTalk mapper compiler cannot perform as well as the personal Custom-XSLT code! And yes, I agree with you… in most of the cases… but it also depends on the approach that you are implementing to solve the problem.
+
+The real secret is to find the best of both worlds: BizTalk Mapper and custom XSLT together.
+
 ## Advance Properties
 
 ### BizTalk Mapper: Omit XML Declaration (Grid Property) explained
