@@ -75,28 +75,28 @@ To accomplish this, we need to:
 * Replace the code of the Scripting functoid, existing in the previous solution, by:
     
     <xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='1']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='1']) gt 0"> 
 		<Quantity> 
 		  <xsl:value-of select="//TimeSeries[@Path='1']/TimedValues/TimedValue/text()" /> 
 		</Quantity> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='2']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='2']) gt 0"> 
 		<NRJQuantity> 
 		  <xsl:value-of select="//TimeSeries[@Path='2']/TimedValues/TimedValue/text()" /> 
 		</NRJQuantity> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='3']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='3']) gt 0"> 
 		<AvgCal> 
 		  <xsl:value-of select="//TimeSeries[@Path='3']/TimedValues/TimedValue/text()" /> 
 		</AvgCal> 
 	  </xsl:when> 
 	</xsl:choose> 
 	<xsl:choose> 
-	  <xsl:when test="count(//TimeSeries[@Path='4']) > 0"> 
+	  <xsl:when test="count(//TimeSeries[@Path='4']) gt 0"> 
 		<AvgDens> 
 		  <xsl:value-of select="//TimeSeries[@Path='4']/TimedValues/TimedValue/text()" /> 
 		</AvgDens> 
