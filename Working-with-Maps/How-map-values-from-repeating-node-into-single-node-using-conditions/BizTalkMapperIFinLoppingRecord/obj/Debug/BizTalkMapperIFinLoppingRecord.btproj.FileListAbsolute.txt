@@ -1,0 +1,4 @@
+C:\Development\BizTalkMapperIFinLoppingRecord\BizTalkMapperIFinLoppingRecord\bin\Debug\BizTalkMapperIFinLoppingRecord.dll
+C:\Development\BizTalkMapperIFinLoppingRecord\BizTalkMapperIFinLoppingRecord\bin\Debug\BizTalkMapperIFinLoppingRecord.pdb
+C:\Development\BizTalkMapperIFinLoppingRecord\BizTalkMapperIFinLoppingRecord\obj\Debug\BizTalkMapperIFinLoppingRecord.dll
+C:\Development\BizTalkMapperIFinLoppingRecord\BizTalkMapperIFinLoppingRecord\obj\Debug\BizTalkMapperIFinLoppingRecord.pdb

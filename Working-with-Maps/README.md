@@ -94,6 +94,9 @@ Basically this can be another example of Content Enricher Pattern or you may nee
 
 The question is how can we easily access orchestration variables from the maps?
 
+### How to map values from a repeating node into a single node using conditions
+In this new mapping pattern I want to show you what’s the best way to map some values from a repeating node into a single node base in some conditions.
+
 ## Advance Properties
 
 ### BizTalk Mapper: Omit XML Declaration (Grid Property) explained

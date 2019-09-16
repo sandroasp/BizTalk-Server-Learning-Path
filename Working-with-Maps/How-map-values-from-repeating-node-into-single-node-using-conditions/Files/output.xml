@@ -1,0 +1,6 @@
+﻿<ns0:Req xmlns:ns0="http://SQLPollingLearnings.SCMReq">
+<Quantity>2458.25</Quantity>
+<NRJQuantity>3458.25</NRJQuantity>
+<AvgCal>4458.25</AvgCal>
+<AvgDens>5458.25</AvgDens>
+</ns0:Req>
