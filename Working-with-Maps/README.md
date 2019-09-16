@@ -71,6 +71,9 @@ You may argument that XSLT automatically generated code by the BizTalk mapper co
 
 The real secret is to find the best of both worlds: BizTalk Mapper and custom XSLT together.
 
+### Automatically Link The Record Elements By Structure, Name or Using Mass Copy
+This demo will provide with 3 small samples for you to understand the differences of the last 3 options (Link by Structure, Link By Name, Mass Copy).
+
 ## Advance Properties
 
 ### BizTalk Mapper: Omit XML Declaration (Grid Property) explained
