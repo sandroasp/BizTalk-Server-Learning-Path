@@ -1,0 +1,4 @@
+﻿Sandro;Pereira;1978-04-04;Crestuma;4415 Crestuma
+Lígia;Tavares;1982-01-21;Seixo-Alvo;451 Seixo-Alvo
+José;Silva;1970-09-19;Crestuma;4415 Crestuma
+Rui;Barbosa;1975-09-19;Lever;4415 Lever

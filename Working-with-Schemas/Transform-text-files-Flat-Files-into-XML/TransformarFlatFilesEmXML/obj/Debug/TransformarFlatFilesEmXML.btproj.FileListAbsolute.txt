@@ -1,0 +1,4 @@
+c:\development\TransformarFlatFilesEmXML\TransformarFlatFilesEmXML\bin\Debug\TransformarFlatFilesEmXML.dll
+c:\development\TransformarFlatFilesEmXML\TransformarFlatFilesEmXML\bin\Debug\TransformarFlatFilesEmXML.pdb
+c:\development\TransformarFlatFilesEmXML\TransformarFlatFilesEmXML\obj\Debug\TransformarFlatFilesEmXML.dll
+c:\development\TransformarFlatFilesEmXML\TransformarFlatFilesEmXML\obj\Debug\TransformarFlatFilesEmXML.pdb

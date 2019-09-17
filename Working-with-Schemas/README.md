@@ -3,6 +3,9 @@
 ## Flat-Files
 Syntax Transformations occurs in the receive or send pipelines and aim to transform a document into another representation, e.g. CSV to XML. Here the document maintains the same data (semantics), but changes the syntax that is represented. I.e. we translate the document, but typically we don't modify the structure. Normally, this type of transformation is bidirectional, since we still have the same semantic content, we can apply the same transformation logic and obtain the document in its original format. Common examples of these transformations are also conversions between HL7 and XML, or EDI and XML.
 
+### Transform text files (Flat Files) into XML
+Transformations act as essential translators in the decoupling between the different systems to connect. This sample aims to help you understand the process of transforming a text file (also called Flat Files) in an XML document using BizTalk Server Flat File Schemas.
+
 ### Dealing with Positional Flat Files
 This is a simple walkthrough explaining the basic principles to create a flat file schema from a file delimited by positions. 
 
