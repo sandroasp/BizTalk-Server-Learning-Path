@@ -1,0 +1,20 @@
+﻿<RootNode>
+ <Record>
+  <AccountType>TypeA</AccountType>
+  <City>Dallas</City>
+  <Sign>-</Sign>
+  <Price>100</Price>
+ </Record>
+ <Record>
+  <AccountType>TypeB</AccountType>
+  <City>Chicago</City>
+  <Sign>+</Sign>
+  <Price>100</Price>
+ </Record>
+ <Record>
+  <AccountType>TypeB</AccountType>
+  <City>Chicago</City>
+  <Sign>-</Sign>
+  <Price>500</Price>
+ </Record>
+</RootNode>

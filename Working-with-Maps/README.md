@@ -52,6 +52,11 @@ First of all let me tell you that for me there is no perfect solution to solve a
 
 We want to combine data from two different messages into one, more specifically, we want to combine each user with his address and each user can have multiple addresses.
 
+### BizTalk Mapper Patterns: Grouping Pattern - How to implement multi-level Muenchian grouping in BizTalk Maps
+The Muenchian Method is a method developed by Steve Muench for performing grouping and sorting functionalities in a more efficient way using keys.  Keys work by assigning a key value to a node and giving you easy access to that node through the key value.  If there are lots of nodes that have the same key value, then all those nodes are retrieved when you use that key value.  Effectively this means that if you want to group a set of nodes according to a particular property of the node, then you can use keys to group them together.
+
+How can we can we performe multi-level Muenchian grouping in BizTalk Maps and perform mathematical operations on this group?
+
 
 
 ## Working with Functoids
