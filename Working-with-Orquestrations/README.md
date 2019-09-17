@@ -16,6 +16,10 @@ In the past, I developed a demo on “How to Call Orchestration from another pro
 
 However, there were a few questions about how we can accomplish that using two different solutions… well is the exact same process, but to help clarify this topic and to better help the community members that placed the questions I decide to create a different demo.
 
+## Customize filename dynamically inside BizTalk Orchestration
+Project explaining how to Customize filename dynamically inside BizTalk Orchestration. This is a basic step and to accomplish this you only have to define the message context property of the output message.
+
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 

@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeFilename", "CustomizeFilename\CustomizeFilename.btproj", "{44CDB97E-7696-4181-A59F-A4C25A3B1A05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|Any CPU = Deployment|Any CPU
+		Development|Any CPU = Development|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44CDB97E-7696-4181-A59F-A4C25A3B1A05}.Deployment|Any CPU.ActiveCfg = Deployment|Any CPU
+		{44CDB97E-7696-4181-A59F-A4C25A3B1A05}.Deployment|Any CPU.Build.0 = Deployment|Any CPU
+		{44CDB97E-7696-4181-A59F-A4C25A3B1A05}.Deployment|Any CPU.Deploy.0 = Deployment|Any CPU
+		{44CDB97E-7696-4181-A59F-A4C25A3B1A05}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{44CDB97E-7696-4181-A59F-A4C25A3B1A05}.Development|Any CPU.Build.0 = Development|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
