@@ -1,0 +1,264 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="6029d5d4-9ed0-4415-967d-c051de401c7f" LowerBound="1.1" HigherBound="74.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="JoinMultipleMessages" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="9c6730bc-8181-479b-b08f-d9b4be1b7fad" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="73.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="JoinMultipleMessagesDemoOrchestration" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="cb322fef-5384-4a49-84d7-a47602800f39" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f0addf32-9191-4d92-9090-3d8731af3f4a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="JoinMultipleMessages.InuputUsers" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgUsers" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="37206bb3-a1ac-437f-82be-8d5024738e49" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="JoinMultipleMessages.InputAddresses" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgAddresses" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a00a0a46-9a79-41df-bd8f-741c1741d64e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="Type" Value="JoinMultipleMessages.OutputMessage" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgResult" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="3470bf7b-d732-41de-8c09-26b8c44e6beb" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="3295feb6-d212-4ac4-bdee-d10294289bf5" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="34.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="InputPort" />
+                    <om:Property Name="MessageName" Value="msgUsers" />
+                    <om:Property Name="OperationName" Value="ReceiveUsers" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Users Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="2431e406-c008-4098-8448-7bb4b1d064d6" ParentLink="ServiceBody_Statement" LowerBound="34.1" HigherBound="63.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Addresses Message Demo Logic" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="c002ee22-899e-4d4a-9f1b-6264bed2f84f" ParentLink="ComplexStatement_Statement" LowerBound="37.1" HigherBound="62.1">
+                        <om:Property Name="Expression" Value="varXML = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;varXML.LoadXml(@&quot;&lt;ns0:Addresses xmlns:ns0=&quot;&quot;http://BizTalk_Server_GenerationFichiersReleve.Test2&quot;&quot;&gt;&#xD;&#xA;                &lt;Address&gt;&#xD;&#xA;                    &lt;UserID&gt;1&lt;/UserID&gt;&#xD;&#xA;                    &lt;AddressLine1&gt;245 rue françois 1er &lt;/AddressLine1&gt;&#xD;&#xA;                    &lt;PostCode&gt;69001&lt;/PostCode&gt;&#xD;&#xA;                    &lt;Town&gt;Lyon&lt;/Town&gt;&#xD;&#xA;                &lt;/Address&gt; &#xD;&#xA;                &lt;Address&gt;&#xD;&#xA;                    &lt;UserID&gt;2&lt;/UserID&gt;&#xD;&#xA;                    &lt;AddressLine1&gt;18 avenue Gerard Majax&lt;/AddressLine1&gt;&#xD;&#xA;                    &lt;PostCode&gt;75001&lt;/PostCode&gt;&#xD;&#xA;                    &lt;Town&gt;Paris&lt;/Town&gt; &#xD;&#xA;                &lt;/Address&gt;&#xD;&#xA;                &lt;Address&gt;&#xD;&#xA;                    &lt;UserID&gt;2&lt;/UserID&gt;&#xD;&#xA;                    &lt;AddressLine1&gt;450 rue Michou&lt;/AddressLine1&gt;&#xD;&#xA;                    &lt;PostCode&gt;75005&lt;/PostCode&gt;&#xD;&#xA;                    &lt;Town&gt;Paris&lt;/Town&gt;&#xD;&#xA;                &lt;/Address&gt;&#xD;&#xA;                &lt;/ns0:Addresses&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgAddresses = varXML;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Addresses MsgAssign" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="a9a3f239-20d6-4923-a8d8-e394284b6a1d" ParentLink="Construct_MessageRef" LowerBound="35.23" HigherBound="35.35">
+                        <om:Property Name="Ref" Value="msgAddresses" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="85029459-3327-4416-8e4b-041a6bab1634" ParentLink="ServiceBody_Statement" LowerBound="63.1" HigherBound="69.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Output Message" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="f4a785ac-ffc7-474c-bf25-2f56c646783d" ParentLink="ComplexStatement_Statement" LowerBound="66.1" HigherBound="68.1">
+                        <om:Property Name="ClassName" Value="JoinMultipleMessages.Transform_User_and_Addresses_In_Output" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform User and Addresses In Output" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="9874f092-2efc-47ac-861b-64377ba0ccec" ParentLink="Transform_InputMessagePartRef" LowerBound="67.102" HigherBound="67.110">
+                            <om:Property Name="MessageRef" Value="msgUsers" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="5e6e4c92-af81-48b5-bb5c-d3e9bd39ed8a" ParentLink="Transform_InputMessagePartRef" LowerBound="67.112" HigherBound="67.124">
+                            <om:Property Name="MessageRef" Value="msgAddresses" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="1242d8e0-3b0a-4761-9b1d-0884431bc6c5" ParentLink="Transform_OutputMessagePartRef" LowerBound="67.28" HigherBound="67.37">
+                            <om:Property Name="MessageRef" Value="msgResult" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_3" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="c9837a89-70df-4da7-bdf3-731e6b38137c" ParentLink="Construct_MessageRef" LowerBound="64.23" HigherBound="64.32">
+                        <om:Property Name="Ref" Value="msgResult" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="7276260b-b9a4-4eff-8dac-77ea2dea82f6" ParentLink="ServiceBody_Statement" LowerBound="69.1" HigherBound="71.1">
+                    <om:Property Name="PortName" Value="OutputPort" />
+                    <om:Property Name="MessageName" Value="msgResult" />
+                    <om:Property Name="OperationName" Value="SendResult" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Output Result" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="78b0238b-5547-42a6-b365-8b841f8fb5ca" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="JoinMultipleMessages.ReceiveUsersType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="InputPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="19d55f59-a9a5-4770-a33c-3ca5cfe11f56" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e3512621-1dbb-4770-9d0c-b26a6c23ce5b" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="26" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="JoinMultipleMessages.OutputType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="OutputPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="4fd08654-eda5-443f-aed5-1e962974bacc" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="d95e654e-54ca-4f68-98f4-074f034cbbbe" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveUsersType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="21c53b53-be9f-4e83-9fa9-1e70838574a5" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveUsers" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="e136b058-7c02-4de7-8325-7bed02ded791" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.24">
+                    <om:Property Name="Ref" Value="JoinMultipleMessages.InuputUsers" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="4b9d807f-7dee-4c24-bdad-04c0c41b244c" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="OutputType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="3c59bb21-cfcb-402a-a94b-dbfbd039801d" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendResult" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="152b97da-d152-4b09-8427-1a0c49032adc" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.26">
+                    <om:Property Name="Ref" Value="JoinMultipleMessages.OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module JoinMultipleMessages
+{
+    public porttype ReceiveUsersType
+    {
+        oneway ReceiveUsers
+        {
+            InuputUsers
+        };
+    };
+    public porttype OutputType
+    {
+        oneway SendResult
+        {
+            OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service JoinMultipleMessagesDemoOrchestration
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveUsersType InputPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses OutputType OutputPort;
+        message InuputUsers msgUsers;
+        message InputAddresses msgAddresses;
+        message OutputMessage msgResult;
+        System.Xml.XmlDocument varXML;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("3295feb6-d212-4ac4-bdee-d10294289bf5")]
+            activate receive (InputPort.ReceiveUsers, msgUsers);
+            varXML = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("2431e406-c008-4098-8448-7bb4b1d064d6")]
+            construct msgAddresses
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("c002ee22-899e-4d4a-9f1b-6264bed2f84f")]
+                varXML = new System.Xml.XmlDocument();
+                
+                varXML.LoadXml(@"<ns0:Addresses xmlns:ns0=""http://BizTalk_Server_GenerationFichiersReleve.Test2"">
+                                <Address>
+                                    <UserID>1</UserID>
+                                    <AddressLine1>245 rue françois 1er </AddressLine1>
+                                    <PostCode>69001</PostCode>
+                                    <Town>Lyon</Town>
+                                </Address> 
+                                <Address>
+                                    <UserID>2</UserID>
+                                    <AddressLine1>18 avenue Gerard Majax</AddressLine1>
+                                    <PostCode>75001</PostCode>
+                                    <Town>Paris</Town> 
+                                </Address>
+                                <Address>
+                                    <UserID>2</UserID>
+                                    <AddressLine1>450 rue Michou</AddressLine1>
+                                    <PostCode>75005</PostCode>
+                                    <Town>Paris</Town>
+                                </Address>
+                                </ns0:Addresses>");
+                
+                msgAddresses = varXML;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("85029459-3327-4416-8e4b-041a6bab1634")]
+            construct msgResult
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("f4a785ac-ffc7-474c-bf25-2f56c646783d")]
+                transform (msgResult) = JoinMultipleMessages.Transform_User_and_Addresses_In_Output (msgUsers, msgAddresses);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("7276260b-b9a4-4eff-8dac-77ea2dea82f6")]
+            send (OutputPort.SendResult, msgResult);
+        }
+    }
+}
+

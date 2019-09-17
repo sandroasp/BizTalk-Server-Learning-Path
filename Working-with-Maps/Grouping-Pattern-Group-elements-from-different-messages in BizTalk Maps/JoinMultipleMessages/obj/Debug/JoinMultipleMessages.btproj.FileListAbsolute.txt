@@ -1,0 +1,4 @@
+c:\development\JoinMultipleMessages\JoinMultipleMessages\bin\Debug\JoinMultipleMessages.dll
+c:\development\JoinMultipleMessages\JoinMultipleMessages\bin\Debug\JoinMultipleMessages.pdb
+c:\development\JoinMultipleMessages\JoinMultipleMessages\obj\Debug\JoinMultipleMessages.dll
+c:\development\JoinMultipleMessages\JoinMultipleMessages\obj\Debug\JoinMultipleMessages.pdb

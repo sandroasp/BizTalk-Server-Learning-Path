@@ -47,6 +47,11 @@ In this new mapping pattern I want to show you how can you transform an hierarch
 
 The first thing we need to know is how I can read the name of the element from the source schema. By default when we drag a link from the source to the destination schema, the value of the element is mapped in the destination schema, but we can change this behavior in the link properties by choosing “Copy name” in the “Source Links” property
 
+### BizTalk Mapper Patterns: Grouping Pattern - Grouping elements from different messages in BizTalk Maps
+First of all let me tell you that for me there is no perfect solution to solve a particular mapping problem, often there are several ways to solve the problem and how it’s solved always depends in the experience and knowledge that you have with the tool or/and with XSLT (of course sometimes there are some solutions better than other or with higher performance)
+
+We want to combine data from two different messages into one, more specifically, we want to combine each user with his address and each user can have multiple addresses.
+
 
 
 ## Working with Functoids
