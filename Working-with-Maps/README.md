@@ -1,5 +1,12 @@
 # Working with Maps
 
+## Introduction
+
+### Basics principles of Maps
+Maps or transformations are one of the most common components in the integration processes. They act as essential translators in the decoupling between the different systems to connect. In this article, as we explore the BizTalk Mapper Designer, we will explain its main concepts.
+
+This project aims to address the Basics principles of Maps.
+
 ## Mapping Patterns
 
 ### BizTalk Mapper Patterns: Canonical Data Model Pattern

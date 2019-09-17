@@ -1,0 +1,4 @@
+c:\development\ComoFuncinamOsMapas\ComoFuncinamOsMapas\bin\Debug\ComoFuncinamOsMapas.dll
+c:\development\ComoFuncinamOsMapas\ComoFuncinamOsMapas\bin\Debug\ComoFuncinamOsMapas.pdb
+c:\development\ComoFuncinamOsMapas\ComoFuncinamOsMapas\obj\Debug\ComoFuncinamOsMapas.dll
+c:\development\ComoFuncinamOsMapas\ComoFuncinamOsMapas\obj\Debug\ComoFuncinamOsMapas.pdb

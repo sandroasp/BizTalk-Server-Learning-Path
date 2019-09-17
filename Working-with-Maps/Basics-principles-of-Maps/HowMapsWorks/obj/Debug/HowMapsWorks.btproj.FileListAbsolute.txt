@@ -1,0 +1,4 @@
+C:\Development\ComoFuncinamOsMapas\HowMapsWorks\bin\Debug\HowMapsWorks.dll
+C:\Development\ComoFuncinamOsMapas\HowMapsWorks\bin\Debug\HowMapsWorks.pdb
+C:\Development\ComoFuncinamOsMapas\HowMapsWorks\obj\Debug\HowMapsWorks.dll
+C:\Development\ComoFuncinamOsMapas\HowMapsWorks\obj\Debug\HowMapsWorks.pdb
