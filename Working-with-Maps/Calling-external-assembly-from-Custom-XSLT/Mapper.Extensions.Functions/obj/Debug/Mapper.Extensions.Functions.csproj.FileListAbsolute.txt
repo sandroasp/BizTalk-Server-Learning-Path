@@ -1,0 +1,5 @@
+c:\development\BizTalk.CallingExternalAssemblyFromInlineXSLT\Mapper.Extensions.Functions\bin\Debug\Mapper.Extensions.Functions.dll
+c:\development\BizTalk.CallingExternalAssemblyFromInlineXSLT\Mapper.Extensions.Functions\bin\Debug\Mapper.Extensions.Functions.pdb
+c:\development\BizTalk.CallingExternalAssemblyFromInlineXSLT\Mapper.Extensions.Functions\obj\Debug\ResolveAssemblyReference.cache
+c:\development\BizTalk.CallingExternalAssemblyFromInlineXSLT\Mapper.Extensions.Functions\obj\Debug\Mapper.Extensions.Functions.dll
+c:\development\BizTalk.CallingExternalAssemblyFromInlineXSLT\Mapper.Extensions.Functions\obj\Debug\Mapper.Extensions.Functions.pdb

@@ -47,6 +47,8 @@ In this new mapping pattern I want to show you how can you transform an hierarch
 
 The first thing we need to know is how I can read the name of the element from the source schema. By default when we drag a link from the source to the destination schema, the value of the element is mapped in the destination schema, but we can change this behavior in the link properties by choosing “Copy name” in the “Source Links” property
 
+
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids
@@ -73,6 +75,8 @@ We can use the Database Lookup functoid to extract information from a database a
 The functoid is actually quite simple to use, however, the main problem that developers face when they use it refers to the second parameter: the connection string.
 
 in this sample we will address this issue and how can you handle.
+
+
 
 ## Mapping Exercices
 
@@ -104,6 +108,13 @@ The question is how can we easily access orchestration variables from the maps?
 
 ### How to map values from a repeating node into a single node using conditions
 In this new mapping pattern I want to show you what’s the best way to map some values from a repeating node into a single node base in some conditions.
+
+### Calling an external assembly from Custom XSLT in BizTalk Server Maps
+So is usual in complex maps to have scripting functoid with custom inline XSLT, and sometimes is useful to call custom .Net components directly from XSLT.
+
+To illustrate this functionality, I decided to create a Class Library project: MapperExtensionsFunctions with a simple class where it is implemented a method to format the numbers in three decimal places:
+
+
 
 ## Advance Properties
 
