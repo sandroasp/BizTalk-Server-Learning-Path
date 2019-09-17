@@ -64,6 +64,9 @@ The Muenchian Method is a method developed by Steve Muench for performing groupi
 
 How can we can we performe multi-level Muenchian grouping in BizTalk Maps and perform mathematical operations on this group?
 
+### BizTalk Mapper Patterns: Grouping Pattern - Selecting distinct nodes (grouping)
+Getting a distinct list of values from a set of nodes and grouping are a common problem in XSLT stylesheets: how do you take a list of elements and arrange them into groups. This project describes three scenarios and their solutions to these problems.
+
 
 
 ## Working with Functoids

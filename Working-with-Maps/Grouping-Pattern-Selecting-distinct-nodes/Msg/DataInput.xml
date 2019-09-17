@@ -1,0 +1,8 @@
+﻿<In>
+<Data Header="AAA" date="2008-10-28" Name="a1" Value="1.0" />
+<Data Header="AAA" date="2008-10-28" Name="a2" Value="2.0" />
+<Data Header="AAA" date="2008-10-28" Name="a3" Value="3.0" />
+<Data Header="BBB" date="2008-10-28" Name="a1" Value="1.0" />
+<Data Header="BBB" date="2008-10-28" Name="a2" Value="2.0" />
+<Data Header="BBB" date="2008-10-28" Name="a3" Value="3.0" />
+</In>

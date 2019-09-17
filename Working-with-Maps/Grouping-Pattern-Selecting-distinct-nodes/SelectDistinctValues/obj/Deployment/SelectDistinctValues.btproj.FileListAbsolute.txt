@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\PROJ\SelectDistinctValues\SelectDistinctValues\bin\Deployment\SelectDistinctValues.dll
+C:\Users\Administrator\Desktop\PROJ\SelectDistinctValues\SelectDistinctValues\bin\Deployment\SelectDistinctValues.pdb
+C:\Users\Administrator\Desktop\PROJ\SelectDistinctValues\SelectDistinctValues\obj\Deployment\SelectDistinctValues.dll
+C:\Users\Administrator\Desktop\PROJ\SelectDistinctValues\SelectDistinctValues\obj\Deployment\SelectDistinctValues.pdb
