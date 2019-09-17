@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SandroPereira.MappingToNameValueRecord", "SandroPereira.MappingToNameValueRecord\SandroPereira.MappingToNameValueRecord.btproj", "{4A657787-A365-4F8E-937A-F269FB27DE6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A657787-A365-4F8E-937A-F269FB27DE6C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

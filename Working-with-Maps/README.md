@@ -42,6 +42,11 @@ When sending messages from one system to another it is common for the target sys
 ### BizTalk Mapper Patterns: Name-Value Transformation Pattern - How to Map Name Value Pair to a Hierarchical Schema
 In this new mapping pattern, I want to show you how can you transform a Name/Value Pair record into a hierarchical schema.
 
+### BizTalk Mapper Patterns: Name-Value Transformation Pattern - How to Map Hierarchical Schema to a Name Value Pair
+In this new mapping pattern I want to show you how can you transform an hierarchical schema into a Name/Value Pair record.
+
+The first thing we need to know is how I can read the name of the element from the source schema. By default when we drag a link from the source to the destination schema, the value of the element is mapped in the destination schema, but we can change this behavior in the link properties by choosing “Copy name” in the “Source Links” property
+
 ## Working with Functoids
 
 ### BizTalk Mapper: Built-in Functoids, Scripting Functoid and Custom Functoids

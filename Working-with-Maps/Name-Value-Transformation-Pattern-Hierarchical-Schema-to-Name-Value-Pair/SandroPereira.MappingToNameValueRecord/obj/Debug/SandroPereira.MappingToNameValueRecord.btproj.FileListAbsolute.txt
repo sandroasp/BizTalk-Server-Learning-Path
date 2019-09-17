@@ -1,0 +1,4 @@
+c:\development\SandroPereira.MappingToNameValueRecord\SandroPereira.MappingToNameValueRecord\bin\Debug\SandroPereira.MappingToNameValueRecord.dll
+c:\development\SandroPereira.MappingToNameValueRecord\SandroPereira.MappingToNameValueRecord\bin\Debug\SandroPereira.MappingToNameValueRecord.pdb
+c:\development\SandroPereira.MappingToNameValueRecord\SandroPereira.MappingToNameValueRecord\obj\Debug\SandroPereira.MappingToNameValueRecord.dll
+c:\development\SandroPereira.MappingToNameValueRecord\SandroPereira.MappingToNameValueRecord\obj\Debug\SandroPereira.MappingToNameValueRecord.pdb
