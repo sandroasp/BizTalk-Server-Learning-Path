@@ -1,0 +1,4 @@
+P:\pjv.virtualgreen\VirtualGreen\Samples\MultiDisassembler\Pipelines\bin\Debug\VirtualGreen.Samples.MultiDisassembler.Pipelines.dll
+P:\pjv.virtualgreen\VirtualGreen\Samples\MultiDisassembler\Pipelines\bin\Debug\VirtualGreen.Samples.MultiDisassembler.Pipelines.pdb
+P:\pjv.virtualgreen\VirtualGreen\Samples\MultiDisassembler\Pipelines\obj\Debug\VirtualGreen.Samples.MultiDisassembler.Pipelines.dll
+P:\pjv.virtualgreen\VirtualGreen\Samples\MultiDisassembler\Pipelines\obj\Debug\VirtualGreen.Samples.MultiDisassembler.Pipelines.pdb
