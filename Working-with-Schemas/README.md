@@ -12,6 +12,8 @@ This is a simple walkthrough explaining the basic principles to create a flat fi
 ### Dealing with Files Delimited by Symbols
 This is a simple walkthrough explaining the basic principles to create a flat file schema from a file delimited by symbols. 
 
+### XML-RPC Schema
+This is a XML-RPC schema that you can use in BizTalk. XML-RPC, It’s a spec and a set of implementations that allow software running on disparate operating systems, running in different environments to make procedure calls over the Internet. 
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
