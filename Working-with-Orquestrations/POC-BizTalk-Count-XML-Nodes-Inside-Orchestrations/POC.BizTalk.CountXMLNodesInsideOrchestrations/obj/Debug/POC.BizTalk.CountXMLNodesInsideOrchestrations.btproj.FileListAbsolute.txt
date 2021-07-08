@@ -1,0 +1,6 @@
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\bin\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.dll
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\bin\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.pdb
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\obj\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.btprojAssemblyReference.cache
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\obj\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\obj\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.dll
+C:\DEV\POC\POC.BizTalk.CountXMLNodesInsideOrchestrations\POC.BizTalk.CountXMLNodesInsideOrchestrations\obj\Debug\POC.BizTalk.CountXMLNodesInsideOrchestrations.pdb

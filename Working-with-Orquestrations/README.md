@@ -19,6 +19,8 @@ However, there were a few questions about how we can accomplish that using two d
 ## Customize filename dynamically inside BizTalk Orchestration
 Project explaining how to Customize filename dynamically inside BizTalk Orchestration. This is a basic step and to accomplish this you only have to define the message context property of the output message.
 
+## POC: BizTalk - Count XML Nodes Inside Orchestrations
+Often you will want to count a certain node to add some business logic inside your Orchestrations. This project explaining how to use XPath count() function inside Orchestrations to count number of nodes.
 
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
