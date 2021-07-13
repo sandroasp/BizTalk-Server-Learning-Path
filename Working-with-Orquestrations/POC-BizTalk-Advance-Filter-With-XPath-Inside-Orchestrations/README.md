@@ -1,4 +1,4 @@
-# POC: BizTalk - Advance Filter With XPath Inside Orchestrations
+# POC: BizTalk - Advanced Filter With XPath Inside Orchestrations
 
 # Introduction
 Often you will want to count or fielter specific nodes present on the messages to add some business logic inside your Orchestrations. Working with XPath inside Orchestrations is a powerful and straightforward feature available since BizTalk Server 2004, and it doesn’t require any additional effort like the alternative (C# Code). Xpath is also a lovely way to retrieve values from BizTalk Server messages, especially when you can not use Distinguished Fields and Property Fields, such as looping records, or don’t want to use property promotions.
