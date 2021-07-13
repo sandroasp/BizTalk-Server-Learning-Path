@@ -1,0 +1,247 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="72b29f79-5720-4dc0-a21c-b61541fe70a4" LowerBound="1.1" HigherBound="60.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="POC.BizTalk.AdvanceFilterWithXSLT" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="87020686-b02d-4fe0-9dcf-820360d3fac7" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="59.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="orchAdvFilterXSLT" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="973728d3-a970-403b-b38e-2eaa11e241e4" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="27.1" HigherBound="28.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCountDistinct" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="22724942-32b9-4909-8818-42f5acb5a41f" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="28.1" HigherBound="29.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCountOr" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="e61fc071-542a-4001-8a40-c15d9fb79744" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="29.1" HigherBound="30.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCountSF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="148977b7-efe5-4b80-a2b0-83b716431164" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="30.1" HigherBound="31.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9809becd-f076-4577-bc22-4cf37c298b8a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="31.1" HigherBound="32.1">
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varCountMF" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="5d85e12a-7b8a-4702-8bc8-6cebdbf673f8" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="POC.BizTalk.AdvanceFilterWithXSLT.XMLSample" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgInput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="ef28790d-5236-4a3b-9fc9-3ed60be1d1a5" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="POC.BizTalk.AdvanceFilterWithXSLT.OutputCount" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOutput" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="56fc407f-b17e-4a1f-87cd-0194287189ec" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="13b54db2-80dd-437f-8db2-22c5d3baf74d" ParentLink="ServiceBody_Statement" LowerBound="34.1" HigherBound="37.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="RcvInputPort" />
+                    <om:Property Name="MessageName" Value="msgInput" />
+                    <om:Property Name="OperationName" Value="RcvSampleOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Sample Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="VariableAssignment" OID="dd517e13-6364-4953-b3f4-7d89447d2ce4" ParentLink="ServiceBody_Statement" LowerBound="37.1" HigherBound="45.1">
+                    <om:Property Name="Expression" Value="varCountSF = System.Convert.ToInt32(xpath(msgInput,&quot;count(//*[local-name()='XMLSample']/*[local-name()='Object']/*[local-name()='Type'][text()='P'])&quot;));&#xD;&#xA;&#xD;&#xA;varCountOr = System.Convert.ToInt32(xpath(msgInput,&quot;count(//*[local-name()='XMLSample']/*[local-name()='Object']/*[local-name()='Type'][text()='P' or text()='A'])&quot;));&#xD;&#xA;&#xD;&#xA;varCountMF = System.Convert.ToInt32(xpath(msgInput,&quot;count(//*[local-name()='XMLSample']/*[local-name()='Object'][*[local-name()='Type'][text()='P']][*[local-name()='Name'][text()='Sandro']])&quot;));&#xD;&#xA;&#xD;&#xA;varCountDistinct = System.Convert.ToInt32(xpath(msgInput,&quot;count(//*[local-name()='XMLSample']/*[local-name()='Object'][not(*[local-name()='Name']/text()=preceding-sibling::*[local-name()='Object']/*[local-name()='Name']/text())]/*[local-name()='Name'])&quot;));" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Count Records Expr" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="edbeb44b-eddc-481e-8514-17e4a379db8c" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="55.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Output Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="4ee7a465-cfaf-4e86-a7e3-b694c3522765" ParentLink="ComplexStatement_Statement" LowerBound="48.1" HigherBound="54.1">
+                        <om:Property Name="Expression" Value="varXML = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;varXML.LoadXml(@&quot;&lt;ns0:Count xmlns:ns0=&quot;&quot;http://POC.BizTalk.AdvanceFilterWithXSLT.OutputCount&quot;&quot;&gt;&lt;NumberObjMultipleFilterElement&gt;&quot; + varCountMF.ToString() + &quot;&lt;/NumberObjMultipleFilterElement&gt;&lt;NumberObjSingleFilterElement&gt;&quot; + varCountSF.ToString() + &quot;&lt;/NumberObjSingleFilterElement&gt;&lt;NumberObjsOrClause&gt;&quot; + varCountOr.ToString() + &quot;&lt;/NumberObjsOrClause&gt;&lt;NumberObjsDistinct&gt;&quot; + varCountDistinct.ToString() + &quot;&lt;/NumberObjsDistinct&gt;&lt;/ns0:Count&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgOutput = varXML;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Output MsgAssign" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="75c843c2-c5e5-4dca-aedd-73805610ad98" ParentLink="Construct_MessageRef" LowerBound="46.23" HigherBound="46.32">
+                        <om:Property Name="Ref" Value="msgOutput" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="ed8c4e93-5494-462f-9d70-b013c6b11d5d" ParentLink="ServiceBody_Statement" LowerBound="55.1" HigherBound="57.1">
+                    <om:Property Name="PortName" Value="SndCountPort" />
+                    <om:Property Name="MessageName" Value="msgOutput" />
+                    <om:Property Name="OperationName" Value="CountOutputOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send Output" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="09828c58-c271-4279-83a2-c0c701e9b058" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="POC.BizTalk.AdvanceFilterWithXSLT.RcvInputPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvInputPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="e892f54e-af01-4fec-a3d2-62f5401b3937" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="3bbffcf5-062d-4ebd-aa71-1a69335fccbf" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="15" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="POC.BizTalk.AdvanceFilterWithXSLT.SndCountPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SndCountPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="fc0f4a98-2b7c-4a9e-8c36-2ca3a869144e" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="99276538-b3bf-45e8-892d-56f7f937c5bc" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RcvInputPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="fce2fbd7-000c-4e7c-a5d4-7f7525dd7524" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvSampleOp" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="fd1caa6c-7a40-42f4-95fc-3ea256a6e591" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.22">
+                    <om:Property Name="Ref" Value="POC.BizTalk.AdvanceFilterWithXSLT.XMLSample" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="f03d7137-4e64-41d0-a2ff-1c435ddb17b6" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SndCountPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="db9cc2d6-531b-4c56-9feb-756b7d4d5a98" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="CountOutputOp" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="4a8dd0c3-e553-4389-8a1e-b21f706fcb01" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.24">
+                    <om:Property Name="Ref" Value="POC.BizTalk.AdvanceFilterWithXSLT.OutputCount" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module POC.BizTalk.AdvanceFilterWithXSLT
+{
+    internal porttype RcvInputPortType
+    {
+        oneway RcvSampleOp
+        {
+            XMLSample
+        };
+    };
+    internal porttype SndCountPortType
+    {
+        oneway CountOutputOp
+        {
+            OutputCount
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service orchAdvFilterXSLT
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements RcvInputPortType RcvInputPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SndCountPortType SndCountPort;
+        message XMLSample msgInput;
+        message OutputCount msgOutput;
+        System.Int32 varCountDistinct;
+        System.Int32 varCountOr;
+        System.Int32 varCountSF;
+        System.Xml.XmlDocument varXML;
+        System.Int32 varCountMF;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("13b54db2-80dd-437f-8db2-22c5d3baf74d")]
+            activate receive (RcvInputPort.RcvSampleOp, msgInput);
+            varXML = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("dd517e13-6364-4953-b3f4-7d89447d2ce4")]
+            varCountSF = System.Convert.ToInt32(xpath(msgInput,"count(//*[local-name()='XMLSample']/*[local-name()='Object']/*[local-name()='Type'][text()='P'])"));
+            
+            varCountOr = System.Convert.ToInt32(xpath(msgInput,"count(//*[local-name()='XMLSample']/*[local-name()='Object']/*[local-name()='Type'][text()='P' or text()='A'])"));
+            
+            varCountMF = System.Convert.ToInt32(xpath(msgInput,"count(//*[local-name()='XMLSample']/*[local-name()='Object'][*[local-name()='Type'][text()='P']][*[local-name()='Name'][text()='Sandro']])"));
+            
+            varCountDistinct = System.Convert.ToInt32(xpath(msgInput,"count(//*[local-name()='XMLSample']/*[local-name()='Object'][not(*[local-name()='Name']/text()=preceding-sibling::*[local-name()='Object']/*[local-name()='Name']/text())]/*[local-name()='Name'])"));
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("edbeb44b-eddc-481e-8514-17e4a379db8c")]
+            construct msgOutput
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("4ee7a465-cfaf-4e86-a7e3-b694c3522765")]
+                varXML = new System.Xml.XmlDocument();
+                
+                varXML.LoadXml(@"<ns0:Count xmlns:ns0=""http://POC.BizTalk.AdvanceFilterWithXSLT.OutputCount""><NumberObjMultipleFilterElement>" + varCountMF.ToString() + "</NumberObjMultipleFilterElement><NumberObjSingleFilterElement>" + varCountSF.ToString() + "</NumberObjSingleFilterElement><NumberObjsOrClause>" + varCountOr.ToString() + "</NumberObjsOrClause><NumberObjsDistinct>" + varCountDistinct.ToString() + "</NumberObjsDistinct></ns0:Count>");
+                
+                msgOutput = varXML;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("ed8c4e93-5494-462f-9d70-b013c6b11d5d")]
+            send (SndCountPort.CountOutputOp, msgOutput);
+        }
+    }
+}
+

@@ -22,6 +22,9 @@ Project explaining how to Customize filename dynamically inside BizTalk Orchestr
 ## POC: BizTalk - Count XML Nodes Inside Orchestrations
 Often you will want to count a certain node to add some business logic inside your Orchestrations. This project explaining how to use XPath count() function inside Orchestrations to count number of nodes.
 
+## POC: BizTalk - Advance Filter With XPath Inside Orchestrations
+Often you will want to count or filter certain nodes to add some business logic inside your Orchestrations. This project explaining how to use XPath count() function inside Orchestrations to count number of nodes with advance filters.
+
 # About Me
 **Sandro Pereira** | [DevScope](http://www.devscope.net/) | MVP & MCTS BizTalk Server 2010 | [https://blog.sandro-pereira.com/](https://blog.sandro-pereira.com/) | [@sandro_asp](https://twitter.com/sandro_asp)
 

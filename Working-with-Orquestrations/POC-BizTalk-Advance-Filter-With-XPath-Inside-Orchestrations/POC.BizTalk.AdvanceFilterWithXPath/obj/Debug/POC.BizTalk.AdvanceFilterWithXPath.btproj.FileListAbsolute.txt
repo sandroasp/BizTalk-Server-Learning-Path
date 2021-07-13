@@ -1,0 +1,6 @@
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\bin\Debug\POC.BizTalk.AdvanceFilterWithXSLT.dll
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\bin\Debug\POC.BizTalk.AdvanceFilterWithXSLT.pdb
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\obj\Debug\POC.BizTalk.AdvanceFilterWithXPath.btprojAssemblyReference.cache
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\obj\Debug\POC.BizTalk.AdvanceFilterWithXPath.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\obj\Debug\POC.BizTalk.AdvanceFilterWithXSLT.dll
+C:\DEV\POC\POC.BizTalk.AdvanceFilterWithXPath\POC.BizTalk.AdvanceFilterWithXPath\obj\Debug\POC.BizTalk.AdvanceFilterWithXSLT.pdb
