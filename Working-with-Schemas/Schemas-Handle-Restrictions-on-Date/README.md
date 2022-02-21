@@ -1,4 +1,4 @@
-# # POC: BizTalk Schemas Handle Restrictions on Date
+## POC: BizTalk Schemas Handle Restrictions on Date
 
 # Introduction
 This is a BizTalk Server Project that explain some samples on how to do Restrictions on Date and Time formats using RegEx patterns.
