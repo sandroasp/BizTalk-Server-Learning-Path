@@ -1,0 +1,6 @@
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\bin\Debug\POC.BizTalk.PropertyFieldPromotion.dll
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\bin\Debug\POC.BizTalk.PropertyFieldPromotion.pdb
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\obj\Debug\POC.BizTalk.PropertyFieldPromotion.btprojAssemblyReference.cache
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\obj\Debug\POC.BizTalk.PropertyFieldPromotion.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\obj\Debug\POC.BizTalk.PropertyFieldPromotion.dll
+C:\DEV\POC\POC.BizTalk.PropertyFieldPromotion\POC.BizTalk.PropertyFieldPromotion\obj\Debug\POC.BizTalk.PropertyFieldPromotion.pdb
