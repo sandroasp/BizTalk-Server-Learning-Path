@@ -1,0 +1,5 @@
+C:\Users\BTSUser\Documents\Visual Studio 2010\Projects\BizTalk.Demotion\BizTalk.Promotion.PipelineComponent\bin\Debug\BizTalk.Promotion.PipelineComponent.dll
+C:\Users\BTSUser\Documents\Visual Studio 2010\Projects\BizTalk.Demotion\BizTalk.Promotion.PipelineComponent\bin\Debug\BizTalk.Promotion.PipelineComponent.pdb
+C:\Users\BTSUser\Documents\Visual Studio 2010\Projects\BizTalk.Demotion\BizTalk.Promotion.PipelineComponent\obj\Debug\BizTalk.Promotion.PipelineComponent.csprojResolveAssemblyReference.cache
+C:\Users\BTSUser\Documents\Visual Studio 2010\Projects\BizTalk.Demotion\BizTalk.Promotion.PipelineComponent\obj\Debug\BizTalk.Promotion.PipelineComponent.dll
+C:\Users\BTSUser\Documents\Visual Studio 2010\Projects\BizTalk.Demotion\BizTalk.Promotion.PipelineComponent\obj\Debug\BizTalk.Promotion.PipelineComponent.pdb

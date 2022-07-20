@@ -1,0 +1,8 @@
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\bin\Debug\POC.BizTalk.PropertyDemotion.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\bin\Debug\POC.BizTalk.PropertyDemotion.pdb
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\bin\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\obj\Debug\POC.BizTalk.PropertyDemotion.btprojAssemblyReference.cache
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\obj\Debug\POC.BizTalk.PropertyDemotion.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\obj\Debug\POC.BizTalk.PropertyDemotion.btproj.CopyComplete
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\obj\Debug\POC.BizTalk.PropertyDemotion.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion\obj\Debug\POC.BizTalk.PropertyDemotion.pdb

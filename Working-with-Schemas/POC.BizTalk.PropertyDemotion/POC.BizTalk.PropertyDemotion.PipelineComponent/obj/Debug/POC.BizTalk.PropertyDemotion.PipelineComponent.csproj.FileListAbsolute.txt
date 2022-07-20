@@ -1,0 +1,16 @@
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.pdb
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\saxon9he-api.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\saxon9he.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.Runtime.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\bin\Debug\IKVM.OpenJDK.Security.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\obj\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.csprojAssemblyReference.cache
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\obj\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.csproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\obj\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.csproj.CopyComplete
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\obj\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.dll
+C:\DEV\POC\POC.BizTalk.PropertyDemotion\POC.BizTalk.PropertyDemotion.PipelineComponent\obj\Debug\POC.BizTalk.PropertyDemotion.PipelineComponent.pdb
