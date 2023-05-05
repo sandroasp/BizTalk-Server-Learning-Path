@@ -1,0 +1,5 @@
+C:\DEV\POC\POC.DirectBoundPorts\POC.DirectBoundPorts\bin\Debug\POC.DirectBoundPorts.dll
+C:\DEV\POC\POC.DirectBoundPorts\POC.DirectBoundPorts\bin\Debug\POC.DirectBoundPorts.pdb
+C:\DEV\POC\POC.DirectBoundPorts\POC.DirectBoundPorts\obj\Debug\POC.DirectBoundPorts.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.DirectBoundPorts\POC.DirectBoundPorts\obj\Debug\POC.DirectBoundPorts.dll
+C:\DEV\POC\POC.DirectBoundPorts\POC.DirectBoundPorts\obj\Debug\POC.DirectBoundPorts.pdb
