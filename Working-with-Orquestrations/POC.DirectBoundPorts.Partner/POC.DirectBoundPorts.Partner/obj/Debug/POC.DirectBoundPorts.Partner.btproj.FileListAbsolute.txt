@@ -1,0 +1,6 @@
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\bin\Debug\POC.DirectBoundPorts.Partner.dll
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\bin\Debug\POC.DirectBoundPorts.Partner.pdb
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\obj\Debug\POC.DirectBoundPorts.Partner.btprojAssemblyReference.cache
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\obj\Debug\POC.DirectBoundPorts.Partner.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\obj\Debug\POC.DirectBoundPorts.Partner.dll
+C:\DEV\POC\POC.DirectBoundPorts.Partner\POC.DirectBoundPorts.Partner\obj\Debug\POC.DirectBoundPorts.Partner.pdb
