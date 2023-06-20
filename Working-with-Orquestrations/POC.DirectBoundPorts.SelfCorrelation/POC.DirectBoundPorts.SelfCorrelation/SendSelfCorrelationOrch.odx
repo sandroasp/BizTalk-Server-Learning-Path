@@ -1,0 +1,105 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="26ecb5b6-699f-4377-bf28-503f9f9b6477" LowerBound="1.1" HigherBound="27.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="POC.DirectBoundPorts.SelfCorrelation" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="de447c30-cf79-42d0-a1d7-6cdef43a904c" ParentLink="Module_ServiceDeclaration" LowerBound="4.1" HigherBound="26.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendSelfCorrelationOrch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="VariableDeclaration" OID="d4557641-9449-4088-a3c3-ad8b0ae0cb98" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="8.1" HigherBound="9.1">
+                <om:Property Name="UseDefaultConstructor" Value="True" />
+                <om:Property Name="Type" Value="System.Xml.XmlDocument" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="varXML" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="81ecc59e-02d6-45ce-aa90-bb69b5535685" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="7.1" HigherBound="8.1">
+                <om:Property Name="Type" Value="POC.DirectBoundPorts.SelfCorrelation.Data" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgData" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="0fe07acb-d5ee-40c2-8dc0-32aba6ed6334" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="PortDeclaration" OID="de581473-7f74-4898-abbd-73448254eb6a" ParentLink="ServiceBody_Declaration" LowerBound="9.15" HigherBound="9.68">
+                    <om:Property Name="PortModifier" Value="Uses" />
+                    <om:Property Name="Orientation" Value="Left" />
+                    <om:Property Name="PortIndex" Value="13" />
+                    <om:Property Name="IsWebPort" Value="False" />
+                    <om:Property Name="OrderedDelivery" Value="False" />
+                    <om:Property Name="DeliveryNotification" Value="None" />
+                    <om:Property Name="Type" Value="POC.DirectBoundPorts.SelfCorrelation.SelfCorrelationPortType" />
+                    <om:Property Name="ParamDirection" Value="In" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="SelfCorrelationPort" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="LogicalBindingAttribute" OID="a17f9152-169d-42c0-917f-eeda471465cb" ParentLink="PortDeclaration_CLRAttribute">
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Construct" OID="29d61064-8270-4ff0-b980-f48142928f63" ParentLink="ServiceBody_Statement" LowerBound="12.1" HigherBound="22.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Data Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="62799683-5f19-4e94-a940-e03abb6d54dd" ParentLink="ComplexStatement_Statement" LowerBound="15.1" HigherBound="21.1">
+                        <om:Property Name="Expression" Value="varXML = new System.Xml.XmlDocument();&#xD;&#xA;&#xD;&#xA;varXML.LoadXml(@&quot;&lt;ns0:Data xmlns:ns0=&quot;&quot;http://POC.DirectBoundPorts.SelfCorrelation.Data&quot;&quot;&gt;&lt;SomeData&gt;SomeData_0&lt;/SomeData&gt;&lt;/ns0:Data&gt;&quot;);&#xD;&#xA;&#xD;&#xA;msgData = varXML;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Data MsgAssign" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="03115112-86b1-42f7-b3d8-d0182da5beb6" ParentLink="Construct_MessageRef" LowerBound="13.23" HigherBound="13.30">
+                        <om:Property Name="Ref" Value="msgData" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="cd38b80e-d5ae-47ae-98c7-af86f9709edf" ParentLink="ServiceBody_Statement" LowerBound="22.1" HigherBound="24.1">
+                    <om:Property Name="PortName" Value="SelfCorrelationPort" />
+                    <om:Property Name="MessageName" Value="msgData" />
+                    <om:Property Name="OperationName" Value="GetDataOp" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_ DAta" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module POC.DirectBoundPorts.SelfCorrelation
+{
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service SendSelfCorrelationOrch
+    {
+        message Data msgData;
+        System.Xml.XmlDocument varXML;
+        body (port uses SelfCorrelationPortType SelfCorrelationPort)
+        {
+            varXML = new System.Xml.XmlDocument();
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("29d61064-8270-4ff0-b980-f48142928f63")]
+            construct msgData
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("62799683-5f19-4e94-a940-e03abb6d54dd")]
+                varXML = new System.Xml.XmlDocument();
+                
+                varXML.LoadXml(@"<ns0:Data xmlns:ns0=""http://POC.DirectBoundPorts.SelfCorrelation.Data""><SomeData>SomeData_0</SomeData></ns0:Data>");
+                
+                msgData = varXML;
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("cd38b80e-d5ae-47ae-98c7-af86f9709edf")]
+            send (SelfCorrelationPort.GetDataOp, msgData);
+        }
+    }
+}
+

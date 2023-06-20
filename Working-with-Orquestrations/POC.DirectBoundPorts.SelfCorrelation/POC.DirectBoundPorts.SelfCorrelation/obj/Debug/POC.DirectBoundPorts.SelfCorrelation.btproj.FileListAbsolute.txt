@@ -1,0 +1,6 @@
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\bin\Debug\POC.DirectBoundPorts.SelfCorrelation.dll
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\bin\Debug\POC.DirectBoundPorts.SelfCorrelation.pdb
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\obj\Debug\POC.DirectBoundPorts.SelfCorrelation.btprojAssemblyReference.cache
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\obj\Debug\POC.DirectBoundPorts.SelfCorrelation.btproj.CoreCompileInputs.cache
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\obj\Debug\POC.DirectBoundPorts.SelfCorrelation.dll
+C:\DEV\POC\POC.DirectBoundPorts.SelfCorrelation\POC.DirectBoundPorts.SelfCorrelation\obj\Debug\POC.DirectBoundPorts.SelfCorrelation.pdb
