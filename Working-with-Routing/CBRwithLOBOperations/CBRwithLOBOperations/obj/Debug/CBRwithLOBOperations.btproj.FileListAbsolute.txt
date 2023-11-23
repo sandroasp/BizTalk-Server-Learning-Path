@@ -1,0 +1,14 @@
+C:\Development\BizTalkLondon\CBRwithLOBOperations\bin\Debug\CBRwithLOBOperations.dll
+C:\Development\BizTalkLondon\CBRwithLOBOperations\bin\Debug\CBRwithLOBOperations.pdb
+C:\Development\BizTalkLondon\CBRwithLOBOperations\bin\Debug\CBROperationPromotionDecode.dll
+C:\Development\BizTalkLondon\CBRwithLOBOperations\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Development\BizTalkLondon\CBRwithLOBOperations\obj\Debug\CBRwithLOBOperations.dll
+C:\Development\BizTalkLondon\CBRwithLOBOperations\obj\Debug\CBRwithLOBOperations.pdb
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\CBRwithLOBOperations.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\CBRwithLOBOperations.pdb
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\CBROperationPromotionDecode.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\Microsoft.BizTalk.Pipeline.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\Microsoft.BizTalk.TestTools.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\bin\Debug\Microsoft.XLANGs.BaseTypes.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\obj\Debug\CBRwithLOBOperations.dll
+C:\Development\CBRwithLOBOperations\CBRwithLOBOperations\obj\Debug\CBRwithLOBOperations.pdb

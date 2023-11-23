@@ -1,0 +1,5 @@
+Error: String cannot have zero length.
+
+   at System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   at System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   at Kovai.BizTalkNoS.TestPipeline.mainform.TestPipeline(String assemblyfile, String assdirectory, String pipetype, String inputinstance, String contextFile, String filename)
