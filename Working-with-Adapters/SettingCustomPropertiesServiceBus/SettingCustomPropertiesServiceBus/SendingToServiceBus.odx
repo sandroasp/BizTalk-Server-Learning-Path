@@ -1,0 +1,187 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="d5f6f4e7-af85-4cb4-b610-6f89f93687d0" LowerBound="1.1" HigherBound="46.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="SettingContentTypeServiceBus" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="ServiceDeclaration" OID="3a7bd01a-b004-40a5-8c4e-93aad47835ed" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="45.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendingToServiceBus" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="MessageDeclaration" OID="dde41994-277e-47bc-b740-12fa92869f4e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="SettingContentTypeServiceBus.SchemaIn" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgIn" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="a3e2f199-c617-4e92-bdd7-a8ab9476655e" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="SettingContentTypeServiceBus.SchemaIn" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="msgOut" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="b23cf5fa-3f13-49d5-b094-2cd2a9d4b543" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="1b063ae0-77c2-4f8b-a813-35f5272df614" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="31.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="PortIN" />
+                    <om:Property Name="MessageName" Value="msgIn" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Input" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="eadfda07-d738-4941-a72c-59f1a8dc0226" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="41.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Construct Service Bus Msg" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="MessageAssignment" OID="24ad0fc4-5265-4507-9e5c-f3366654f1de" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="40.1">
+                        <om:Property Name="Expression" Value="msgOut = msgIn;&#xD;&#xA;msgOut(SBMessaging.ContentType) = msgIn.ContentType;&#xD;&#xA;&#xD;&#xA;msgOut(SettingContentTypeServiceBus.targetApplication) = &quot;sb-outbound&quot;;&#xD;&#xA;msgOut(SettingContentTypeServiceBus.brand) = &quot;Sandro Pereira&quot;;" />
+                        <om:Property Name="ReportToAnalyst" Value="False" />
+                        <om:Property Name="Name" Value="Output MsgAssign" />
+                        <om:Property Name="Signal" Value="True" />
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="173f28d8-5a5d-466f-9874-383e16d4f18f" ParentLink="Construct_MessageRef" LowerBound="32.23" HigherBound="32.29">
+                        <om:Property Name="Ref" Value="msgOut" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="944e617e-6040-4362-8a35-06b73cd3a2f6" ParentLink="ServiceBody_Statement" LowerBound="41.1" HigherBound="43.1">
+                    <om:Property Name="PortName" Value="PortOUT" />
+                    <om:Property Name="MessageName" Value="msgOut" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send To Service Bus" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="ff62fe50-4b56-403d-9270-cb1f03dec4bd" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SettingContentTypeServiceBus.PortINType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortIN" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="4a1c009d-908d-4c1c-8134-9b99f79900a1" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="87b5dac2-eb4d-469f-9b08-3b3b3b967ee4" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="13" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="SettingContentTypeServiceBus.PortOUTType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PortOUT" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="dd727551-0348-41ec-ae19-e45c61825d58" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="785691a1-9232-410f-a8c9-e41cd0504e6f" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortINType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="88c4c266-1521-483a-a99e-9bf8792576b5" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4eac5290-a8a9-4254-8792-5cfc2b01c8b9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.21">
+                    <om:Property Name="Ref" Value="SettingContentTypeServiceBus.SchemaIn" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="72c1e786-d34f-48fc-947c-a5e266c48bab" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortOUTType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="0388cd68-998c-45a7-809c-d1b6bd565dad" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="18be3407-c848-4c39-a373-1c253f003437" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.21">
+                    <om:Property Name="Ref" Value="SettingContentTypeServiceBus.SchemaIn" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module SettingContentTypeServiceBus
+{
+    internal porttype PortINType
+    {
+        oneway Operation_1
+        {
+            SchemaIn
+        };
+    };
+    internal porttype PortOUTType
+    {
+        oneway Operation_1
+        {
+            SchemaIn
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service SendingToServiceBus
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortINType PortIN;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortOUTType PortOUT;
+        message SchemaIn msgIn;
+        message SchemaIn msgOut;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1b063ae0-77c2-4f8b-a813-35f5272df614")]
+            activate receive (PortIN.Operation_1, msgIn);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("eadfda07-d738-4941-a72c-59f1a8dc0226")]
+            construct msgOut
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("24ad0fc4-5265-4507-9e5c-f3366654f1de")]
+                msgOut = msgIn;
+                msgOut(SBMessaging.ContentType) = msgIn.ContentType;
+                
+                msgOut(SettingContentTypeServiceBus.targetApplication) = "sb-outbound";
+                msgOut(SettingContentTypeServiceBus.brand) = "Sandro Pereira";
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("944e617e-6040-4362-8a35-06b73cd3a2f6")]
+            send (PortOUT.Operation_1, msgOut);
+        }
+    }
+}
+

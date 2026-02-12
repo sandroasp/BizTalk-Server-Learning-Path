@@ -1,0 +1,5 @@
+C:\Users\Administrator\Source\Repos\SettingContentTypeServiceBus\SettingContentTypeServiceBus\bin\Debug\SettingContentTypeServiceBus.dll
+C:\Users\Administrator\Source\Repos\SettingContentTypeServiceBus\SettingContentTypeServiceBus\bin\Debug\SettingContentTypeServiceBus.pdb
+C:\Users\Administrator\Source\Repos\SettingContentTypeServiceBus\SettingContentTypeServiceBus\obj\Debug\SettingContentTypeServiceBus.btproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\SettingContentTypeServiceBus\SettingContentTypeServiceBus\obj\Debug\SettingContentTypeServiceBus.dll
+C:\Users\Administrator\Source\Repos\SettingContentTypeServiceBus\SettingContentTypeServiceBus\obj\Debug\SettingContentTypeServiceBus.pdb
